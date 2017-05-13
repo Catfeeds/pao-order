@@ -1,0 +1,454 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class MoudleController extends Controller {
+	public function __construct(){
+		Controller::__construct();
+		$admin_id = session("re_admin_id");
+		if(!$admin_id){
+			redirect("Index/login");
+		}
+		$restaurant_manager_model = D('restaurant_manager');
+		$restaurant_id = $restaurant_manager_model->where("id = $admin_id")->field("restaurant_id")->find()['restaurant_id'];
+		session('restaurant_id',$restaurant_id);
+	}
+
+	//模板-点餐流程页
+    public function index(){	
+    	$adver = D('advertisement');
+		$condition['restaurant_id'] = session('restaurant_id');
+		$condition['advertisement_type'] = 0;
+    	$arr = $adver->where($condition)->select();
+    	$this->assign("info",$arr);							//横屏广告填充(当前店铺)
+
+    	$condition1['restaurant_id'] = session('restaurant_id');
+		$condition1['advertisement_type'] = 1;
+    	$arr1 = $adver->where($condition1)->select();
+    	$this->assign("info1",$arr1); 						//竖屏广告填充(当前店铺)
+    	
+    	$condition2['restaurant_id'] = session('restaurant_id');
+    	$condition2['advertisement_type'] = 2;
+    	$arr5 = $adver->where($condition2)->select();
+    	$this->assign("info5",$arr5); 						//叫号屏广告填充(当前店铺)
+    	
+    	$restaurant_process = D('restaurant_process');
+		$p_condition['restaurant_id'] = session('restaurant_id');
+    	$arr2 = $restaurant_process->where($p_condition)->select();
+    	$process = D('process');
+    	$arrlist = array();
+    	foreach($arr2 as $a2){
+    		$p_condition['process_id'] = $a2['process_id'];
+    		$processlist = $process->where($p_condition)->find();
+    		$processlist['process_status'] = $a2['process_status'];
+    		$arrlist[] = $processlist;
+    	}
+    	$this->assign("info2",$arrlist); 					//流程页填充(当前店铺)
+    	
+    	$restaurant = D('Restaurant');
+		$r_condition['restaurant_id'] = session('restaurant_id');
+    	$time = $restaurant->where($r_condition)->field('advertise_time')->find()['advertise_time'];
+    	$this->assign('info3',$time);						//广告时间(当前店铺)
+								
+		$adv_lang = $restaurant->where($r_condition)->field('adv_language')->find()['adv_language'];
+    	$this->assign('info4',$adv_lang);                   //默认广告语(当前店铺)
+        $this->display();
+    }
+
+    //点餐流程状态更改
+    public function modifyprocess(){
+    	$restaurant_process = D('restaurant_process');
+		$condition['process_status'] = I('get.status');
+		$condition['restaurant_id'] =session('restaurant_id');
+		$data['restaurant_id'] =session('restaurant_id');
+		$data["process_id"] = I('get.id');
+		$result = $restaurant_process->where($data)->save($condition);
+		$msg['msg'] = "修改流程页状态";
+		$msg['result'] = $result;
+		exit(json_encode($msg));	
+    }
+    
+    //广告轮播时间设置
+    public function timeSettings(){
+    	$condition['restaurant_id'] = session('restaurant_id');
+    	$condition['advertise_time'] = I('post.advertise_time');
+    	$restaurant = D('Restaurant');
+    	$n = $restaurant->save($condition);
+    	$arr = $restaurant->where($condition)->select();
+    	exit(json_encode($arr));   	
+    }
+	
+	//广告语默认设置
+	public function adv_langSet(){
+		$condition['restaurant_id'] = session('restaurant_id');
+		$condition['adv_language'] = I('post.adv_language');
+		$restaurant = D('Restaurant');
+		$n = $restaurant->save($condition);
+		$arr = $restaurant->where($condition)->find();
+    	exit(json_encode($arr));
+	}
+    
+    //上传横版广告
+    public function uploadimg(){
+    	$adver = D('advertisement');
+      	$upload = new \Think\Upload();// 实例化上传类
+      	$upload->maxSize   =     3145728 ;// 设置附件上传大小
+      	$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+      	$upload->savePath  =      'upadvert_heng/'; // 设置附件上传目录
+      	$upload->autoSub = false;
+      	$z   =   $upload->upload();   	  
+      	$picpathname = './Application/Admin/Uploads/'.$z[file]['savepath'] . $z[file]['savename']; 	
+      	$data['advertisement_image_url'] = $picpathname;
+      	$data['restaurant_id'] = session('restaurant_id');
+      	$data['advertisement_type'] = 0;
+		$map['advertisement_id'] = I('post.aid');
+      	if($_POST['wtype'] == "default"){
+      		$addr = $adver->where($map)->field("advertisement_image_url")->find()['advertisement_image_url'];
+			if($addr != "./Application/Admin/Uploads/default/default_hengadv.jpg"){
+				$addr = ltrim($addr,".");
+	      		$address = dirname(dirname(dirname(dirname(__FILE__)))).$addr;
+	      		unlink($address);
+			}
+      		$data['advertisement_id'] = I('post.aid');     		
+      		$adver->save($data);
+      	}else{
+      		if($_POST['statu'] == ""){
+      			$num = $adver->add($data);
+      		}else{
+      			$addr = $adver->where($map)->field("advertisement_image_url")->find()['advertisement_image_url'];
+				if($addr != "./Application/Admin/Uploads/default/default_hengadv.jpg"){
+					$addr = ltrim($addr,".");
+	      			$address = dirname(dirname(dirname(dirname(__FILE__)))).$addr;
+	      			unlink($address);
+				}
+      			$data['advertisement_id'] = I('post.aid');
+      			$data1 = $adver->save($data);
+      		}
+      	}
+      	$where['advertisement_type'] = 0;
+		$where['restaurant_id'] = session('restaurant_id');
+		$arr = $adver->where($where)->select();
+		$this->assign('info',$arr);
+		$this->display('adv_heng');
+    }
+    
+     //上传竖版广告
+    public function uploadphimg(){
+    	$adver = D('advertisement');
+      	$upload = new \Think\Upload();// 实例化上传类
+      	$upload->maxSize   =     3145728 ;// 设置附件上传大小
+      	$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+      	$upload->savePath  =      'upadvert_shu/'; // 设置附件上传目录
+      	$upload->autoSub = false;
+      	$z   =   $upload->upload(); 	  
+      	$picpathname = './Application/Admin/Uploads/'.$z[file]['savepath'] . $z[file]['savename'];
+      	$data['advertisement_image_url'] = $picpathname;
+      	$data['restaurant_id'] = session('restaurant_id');
+      	$data['advertisement_type'] = 1;
+		$map['advertisement_id'] = I('post.aid');
+      	if($_POST['wtype'] == "default"){
+      		$addr = $adver->where($map)->field("advertisement_image_url")->find()['advertisement_image_url'];
+			if($addr != "./Application/Admin/Uploads/default/default_shuadv.jpg"){
+				$addr = ltrim($addr,".");
+	      		$address = dirname(dirname(dirname(dirname(__FILE__)))).$addr;
+	      		unlink($address);
+			}
+      		$data['advertisement_id'] = I('post.aid');		
+      		$adver->save($data);
+      	}else{
+      		if($_POST['statu'] == ""){
+      			$num = $adver->add($data);
+      		}else{
+      			$addr = $adver->where($map)->field("advertisement_image_url")->find()['advertisement_image_url'];
+				if($addr != "./Application/Admin/Uploads/default/default_shuadv.jpg"){
+					$addr = ltrim($addr,".");
+	      			$address = dirname(dirname(dirname(dirname(__FILE__)))).$addr;
+	      			unlink($address);
+				}
+      			$data['advertisement_id'] = I('post.aid');	
+      			$data1 = $adver->save($data);
+      		}
+      	}
+      	$where['advertisement_type'] = 1;
+		$where['restaurant_id'] = session('restaurant_id');
+		$arr = $adver->where($where)->select();
+		$this->assign('info1',$arr);
+		$this->display('adv_shu');
+    }
+    
+	//上传叫号屏广告
+    public function uploadsnimg(){
+    	$adver = D('advertisement');
+      	$upload = new \Think\Upload();// 实例化上传类
+      	$upload->maxSize   =     3145728 ;// 设置附件上传大小
+      	$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+      	$upload->savePath  =      'upadvert_showNum/'; // 设置附件上传目录
+      	$upload->autoSub = false;
+      	$z   =   $upload->upload(); 	 
+      	$picpathname = './Application/Admin/Uploads/'.$z[file]['savepath'] . $z[file]['savename'];
+      	$where['advertisement_id'] = I('post.aid');
+  		$addr = $adver->where($where)->field("advertisement_image_url")->find()['advertisement_image_url'];	
+		if($addr != "./Application/Admin/Uploads/default/default_hxadv.jpg"){
+			$addr = ltrim($addr,".");
+			$address = dirname(dirname(dirname(dirname(__FILE__)))).$addr;
+  			unlink($address);
+		}
+    	$data['advertisement_id'] = I('post.aid');
+		$data['advertisement_image_url'] = $picpathname;
+  		$r = $adver->save($data);
+		if($r){
+			$msg['msg'] = "上传成功！";
+			$msg['code'] = 1;
+		}else{
+			$msg['msg'] = "上传失败！";
+			$msg['code'] = 2;
+		}
+		exit(json_encode($msg));
+    }
+	
+    //删除横屏广告
+    public function deladver(){
+    	$adver = D('advertisement');
+    	//删除服务器上的图片
+    	$imgaddr = $adver->where("advertisement_id=".$_POST['advertisement_id'])->field("advertisement_image_url")->find()['advertisement_image_url'];
+		$imgaddr = ltrim($imgaddr,".");
+    	$address = dirname(dirname(dirname(dirname(__FILE__)))).$imgaddr;	
+    	unlink($address);
+		$adver->where('advertisement_id='.$_POST['advertisement_id'])->delete();
+		$where['advertisement_type'] = 0;
+		$where['restaurant_id'] = session('restaurant_id');
+		$arr = $adver->where($where)->select();
+    	$this->assign('info',$arr);
+    	$this->display('adv_heng');
+    }
+    
+	//删除竖屏广告
+    public function deladver1(){
+    	$adver = D('advertisement');
+    	//删除服务器上的图片
+    	$imgaddr = $adver->where("advertisement_id=".$_POST['advertisement_id'])->field("advertisement_image_url")->find()['advertisement_image_url'];
+		$imgaddr = ltrim($imgaddr,".");
+    	$address = dirname(dirname(dirname(dirname(__FILE__)))).$imgaddr;
+    	unlink($address);
+		$adver->where('advertisement_id='.$_POST['advertisement_id'])->delete();
+		$where['advertisement_type'] = 1;
+		$where['restaurant_id'] = session('restaurant_id');
+		$arr = $adver->where($where)->select();
+		$this->assign("info1",$arr);
+		$this->display('adv_shu');
+    }
+    
+    //模板-点餐设备界面
+    public function device(){     										//模板表
+    	$restpage = D('restaurant_page');							//模板与店铺关联的第三表
+		$condition['restaurant_id'] = session('restaurant_id');
+		$arr = $restpage->where($condition)->select();				//查出当前店铺的所有终端模板记录（横，竖，移动)
+		$page = D('page');
+		$pagelist = array();
+		$pagelist2 = array();	
+		foreach($arr as $a){ 
+			$condition1['order_page_id'] = $a['order_page_id'];
+			$pageinfo = $page->where($condition1)->find();
+			$pageinfo['ids'] = $a['id'];
+			$pageinfo['replace_status'] = $a['replace_status'];
+			if($pageinfo['type'] == 0){
+				$pagelist[] = $pageinfo;//把循环出来的一维数组添加到新建数组中，构建成一个二维数组
+			}else if($pageinfo['type'] == 1){
+				$pagelist2[] = $pageinfo;
+			}
+		}
+		$this->assign('info',$pagelist);
+		$this->assign('info2',$pagelist2);
+    	$this->display();
+    }
+    
+    //输入模板获取码，获取指定模板
+	public function replaceTemp(){		
+		//先判断该模板该餐厅是否存在
+		$page = D('page');
+		$data['template_code'] = I('get.template_code');
+		$type = $page->where($data)->field('type')->find()['type'];
+		if($type != I('get.tpltype')){
+			$msg['msg'] = '提取码有误！';
+			$msg['code'] = 1;
+			exit(json_encode($msg));
+		}
+		$result = $page->where($data)->field('order_page_id')->find()['order_page_id'];
+		$type = $page->where($data)->field('type')->find()['type'];
+		$restaurant_page = D('restaurant_page');
+		$data1['restaurant_id'] = session('restaurant_id');
+		$data1['order_page_id'] = $result;
+		$arr = $restaurant_page->where($data1)->select();
+		if($arr){
+			$msg['msg'] = '模板已存在！';
+			$msg['code'] = 2;
+			exit(json_encode($msg));
+		}else{	
+			$restpage = D('restaurant_page');
+			$data2['order_page_id'] = $result;
+			$data2['restaurant_id'] = session('restaurant_id');		
+			$result2 = $restpage->add($data2);						//添加记录到关联	
+			if($result2){
+				$msg['msg'] = '获取模板成功！';
+				$msg['code'] = 3;
+				exit(json_encode($msg));
+			}									
+		}
+	}    
+	
+	//应用横竖屏模板
+	public function useTemp(){
+		$restpage = D('restaurant_page');
+		$condition['id'] = I('get.ids');				
+		$condition['restaurant_id'] = session('restaurant_id');
+	    $r = $restpage->where($condition)->field('replace_status')->find()['replace_status'];	//通过传过来的模板记录ID查询其状态
+		if($r != 1){											//如果状态不等于1，则修改成1
+			$condition['replace_status'] = 1;
+			$restpage->save($condition);
+		}
+		$map['id'] = array('neq',I('get.ids'));					//将该店铺，其它对应终端的模板状态修改成0
+		$map['restaurant_id'] = session('restaurant_id');
+		$arr = $restpage->where($map)->select();
+		$page = D('page');
+		foreach($arr as $v){
+			$condition1['order_page_id'] = $v['order_page_id'];
+			$type = $page->where($condition1)->field('type')->find()['type'];
+			if($type == I('get.tpltype')){						//操作同终端的模板（同店铺）
+				$condition2['id'] = $v['id'];
+				$r1 = $restpage->where($condition2)->field('replace_status')->find()['replace_status'];
+				if($r1 != 0){
+					$condition2['replace_status'] = 0;
+					$r1 = $restpage->save($condition2);
+					if($r1){
+						$msg['msg'] = "应用该模板成功！";
+						$msg['data'] = 1;
+					}else{
+						$msg['msg'] = "应用该模板失败！";
+						$msg['data'] = 2;		
+					}	
+				}
+			}	
+		}
+		exit(json_encode($msg));
+	}
+
+	
+/*	//删除横屏模板
+	public function delTemp(){
+		$restpage = D('restaurant_page');
+		$condition['id'] = $_POST['id'];	
+		$condition['restaurant_id'] = 1;
+		$result = $restpage->where($condition)->delete();
+		$msg['msg'] = "成功删除模板";
+		$msg['data'] = $result;
+		$msg['type'] = $_POST['type'];	
+		exit(json_encode($msg));
+	}*/
+	
+	
+	//显示所获得的移动端模板（当前店铺）
+	public function mobile(){
+		$restaurant_page = D('restaurant_page');
+		$condition['restaurant_id'] = session('restaurant_id');
+		$arr = $restaurant_page->where($condition)->select();
+		$page = D('page');
+		$pagearr= array();
+		foreach($arr as $v){
+			$condition1['order_page_id'] = $v['order_page_id'];	
+			$arr1 = $page->where($condition1)->find();
+			$arr1['ids'] = $v['id'];
+			$arr1['replace_status'] = $v['replace_status'];
+			if($arr1['type'] == 2){
+				$pagearr[] = $arr1;
+ 			}
+		}
+		$this->assign('info',$pagearr);
+		$this->display();
+	}
+	
+	
+	//应用移动端模板
+	public function useTemp2(){
+		$restpage = D('restaurant_page');
+		$condition['id'] = $_POST['ids'];
+		$condition['restaurant_id'] = session('restaurant_id');
+	    $r = $restpage->where($condition)->field('replace_status')->select();
+		//dump($r[0]['replace_status']);	
+		if($r[0]['replace_status'] == 1){			
+			$condition['replace_status'] = 1;
+			$restpage->save($condition);
+		}else{
+			$condition['replace_status'] = 1;
+			$restpage->save($condition);
+		}
+		$map['id'] = array('neq',$_POST['ids']);
+
+		$arr = $restpage->where($map)->select();
+		//dump($arr);
+		foreach($arr as $v){
+			$condition1['order_page_id'] = $v['order_page_id'];
+			$page = D("page");
+			$result = $page->where($condition1)->field('type')->select();
+			$result = $result[0];
+			//dump($result['type']);
+			if($result['type'] == 2){
+				$condition2['id'] = $v['id'];
+				$condition2['replace_status'] = 0;
+				$restpage->save($condition2);
+			}
+			//dump($result);
+		}
+		$msg['msg'] = "成功";
+		$msg['data'] = $z;
+		exit(json_encode($msg));
+	}
+	
+	//更改横屏模板颜色
+	public function changecolor(){
+		$restaurant = D('Restaurant');
+		$condition['tplcolor_id'] = I('get.tplcolor_id');
+		$condition['restaurant_id'] = session('restaurant_id');
+		$n = $restaurant->save($condition);
+		if($n){
+			$msg['msg'] = "横屏模板颜色更改成功！";
+			$msg['data'] = 0;	
+		}else{
+			$msg['msg'] = "横屏模板颜色更改失败！";
+			$msg['data'] = 1;
+		}
+		$this->ajaxReturn($msg);
+	}
+	
+	//更改竖屏模板颜色
+	public function changecolor1(){
+		$restaurant = D('Restaurant');
+		$condition['tplcolor1_id'] = I('get.tplcolor1_id');
+		$condition['restaurant_id'] = session('restaurant_id');
+		$n = $restaurant->save($condition);
+		if($n){
+			$msg['msg'] = "模板颜色更改成功！";
+			$msg['data'] = 0;	
+		}else{
+			$msg['msg'] = "模板颜色更改失败！";
+			$msg['data'] = 1;
+		}
+		$this->ajaxReturn($msg);
+	}
+	
+	//更改移动模板颜色
+	public function changecolor2(){
+		$restaurant = D('Restaurant');
+		$condition['tplcolor2_id'] = I('get.tplcolor2_id');
+		$condition['restaurant_id'] = session('restaurant_id');
+		$n = $restaurant->save($condition);
+		if($n){
+			$msg['msg'] = "模板颜色更改成功！";
+			$msg['data'] = 0;	
+		}else{
+			$msg['msg'] = "模板颜色更改失败！";
+			$msg['data'] = 1;
+		}
+		$this->ajaxReturn($msg);
+	}
+	
+	
+}

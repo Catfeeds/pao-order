@@ -1,0 +1,1799 @@
+[ 2017-03-24T13:52:58+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.086057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.086099s ]
+
+[ 2017-03-24T13:52:58+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-03-24T13:53:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg/0.04590296266195404
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-03-24T13:53:25+08:00 ] 127.0.0.1 /index.php/admin/index/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE `login_account` = '123456' LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2017-03-24T13:53:25+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0075s ]
+SQL: SELECT `logo` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `qrc_code` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `qrc_code` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `qrc_device` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `qrc_device` WHERE `qrc_code_id` = 63 LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-03-24T13:53:26+08:00 ] 127.0.0.1 /index.php/Admin/restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0068s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0073s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: restaurant_url E:\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-03-24T13:53:29+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0067s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-03-24T13:53:53+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-03-24T13:53:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-03-24T13:55:40+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0067s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0073s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: restaurant_url E:\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2017-03-24T14:00:48+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2017-03-24T14:00:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-03-24T14:08:17+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0063s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-03-24T14:08:20+08:00 ] 127.0.0.1 /index.php/admin/dishes/showDisinfoBykey/food_category_id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0061s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 0,8   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0068s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-03-24T14:08:21+08:00 ] 127.0.0.1 /index.php/admin/dishes/showDisinfoBykey/food_category_id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0077s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 1   [ RunTime:0.0055s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 0,8   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0052s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-03-24T14:08:21+08:00 ] 127.0.0.1 /index.php/admin/dishes/showDisinfoBykey/food_category_id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0070s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-03-24T14:08:22+08:00 ] 127.0.0.1 /index.php/admin/dishes/showDisinfoBykey/food_category_id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0066s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 0,8   [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0062s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-03-24T14:08:24+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0091s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2017-03-24T14:08:25+08:00 ] 127.0.0.1 /index.php/admin/dishes/showDisinfoBykey/food_category_id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0065s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 1   [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 0,8   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 LIMIT 1   [ RunTime:0.0054s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-03-24T14:08:30+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0066s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0067s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-03-24T14:08:33+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0462s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼',`food_price`='0.01',`discount`=NULL,`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.1365s ]
+SQL: DELETE FROM `food_category_relative` WHERE ( food_id = 474 ) [ RunTime:0.0455s ]
+SQL: INSERT INTO `food_category_relative` (`food_id`,`food_category_id`) VALUES ('474','180') [ RunTime:0.0465s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0032s ]
+NOTIC: [2] unlink(./Application/Html/131/orderAjax180.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1008 行.
+NOTIC: [2] unlink(./Application/Html/131/orderPopup474.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1012 行.
+
+[ 2017-03-24T14:08:36+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0062s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0055s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-03-24T14:09:10+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0075s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼',`food_price`='0.01',`discount`=NULL,`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.0579s ]
+SQL: DELETE FROM `food_category_relative` WHERE ( food_id = 474 ) [ RunTime:0.0441s ]
+SQL: INSERT INTO `food_category_relative` (`food_id`,`food_category_id`) VALUES ('474','180') [ RunTime:0.0497s ]
+NOTIC: [2] unlink(./Application/Html/131/order.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 989 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Application/Html/131/orderAjax180.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1008 行.
+NOTIC: [2] unlink(./Application/Html/131/orderPopup474.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1012 行.
+
+[ 2017-03-24T14:09:22+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0084s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0068s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0263s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0188s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-03-24T14:09:39+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0055s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0088s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-03-24T14:09:55+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0068s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0059s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-03-24T14:10:01+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0059s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0036s ]
+
+[ 2017-03-24T14:10:42+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0068s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0068s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0065s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-03-24T14:10:49+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0052s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0051s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-03-24T14:10:54+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0069s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0061s ]
+
+[ 2017-03-24T14:11:01+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0067s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0065s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-03-24T14:12:08+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0079s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0062s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-03-24T14:12:14+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0067s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+
+[ 2017-03-24T14:12:50+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0072s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0065s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-03-24T14:12:54+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0068s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼',`food_price`='0.01',`discount`=NULL,`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.0364s ]
+
+[ 2017-03-24T14:13:09+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0064s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0046s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-03-24T14:13:14+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼',`food_price`='0.01',`discount`=NULL,`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.0519s ]
+
+[ 2017-03-24T14:14:50+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0057s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0044s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-03-24T14:14:57+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0049s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼',`food_price`='0.01',`discount`=NULL,`foods_num_day`='11',`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.0452s ]
+
+[ 2017-03-24T14:15:10+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0049s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0045s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-03-24T14:15:15+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0053s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0055s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-03-24T14:15:22+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0062s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼',`food_price`='0.01',`discount`=NULL,`foods_num_day`='99',`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.0525s ]
+SQL: DELETE FROM `food_category_relative` WHERE ( food_id = 474 ) [ RunTime:0.0568s ]
+SQL: INSERT INTO `food_category_relative` (`food_id`,`food_category_id`) VALUES ('474','180') [ RunTime:0.0559s ]
+NOTIC: [2] unlink(./Application/Html/131/order.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 989 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0028s ]
+NOTIC: [2] unlink(./Application/Html/131/orderAjax180.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1008 行.
+NOTIC: [2] unlink(./Application/Html/131/orderPopup474.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1012 行.
+
+[ 2017-03-24T14:15:26+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0048s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0045s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2017-03-24T15:18:22+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0070s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 0  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 1  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 2  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `restaurant_id` = 131  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 4 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0073s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT `adv_language` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-03-24T15:18:37+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0079s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-03-24T15:18:43+08:00 ] 127.0.0.1 /index.php/admin/dishes/showDisinfoBykey/food_category_id/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0077s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180 LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `food_category_name` FROM `food_category` WHERE ( food_category_id = 180 ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-03-24T15:18:44+08:00 ] 127.0.0.1 /index.php/admin/Dishes/edit/food_id/474/food_category_id/180/page/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0067s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0069s ]
+SQL: SELECT `district_id`,`district_name` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `printer` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `printer` WHERE `restaurant_id` = 131  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `prom` WHERE `prom_id` = 474 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `attribute_type` WHERE `food_id` = 474  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 665  [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 665 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `food_attribute` WHERE `attribute_type_id` = 730  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food_attribute` WHERE `attribute_type_id` = 730 LIMIT 1   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_select - assumed 'is_select' E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+NOTIC: [8] Undefined index: is_select E:\yunniu\Application\Runtime\Cache\Admin\fbe03e26adb34faaf9bd90b0bffd53b3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-03-24T15:18:48+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/modifyfoodinfo/food_id/474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0066s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: discount E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 948 行.
+SQL: UPDATE `food` SET `food_name`='鲍鱼888',`food_price`='0.01',`discount`=NULL,`foods_num_day`='99',`star_level`='5',`hot_level`='2',`food_desc`='无法完全放',`is_prom`='0',`print_id`='54',`district_id`='0',`restaurant_id`='131' WHERE ( food_id = 474 ) [ RunTime:0.0477s ]
+SQL: DELETE FROM `food_category_relative` WHERE ( food_id = 474 ) [ RunTime:0.0555s ]
+SQL: INSERT INTO `food_category_relative` (`food_id`,`food_category_id`) VALUES ('474','180') [ RunTime:0.0598s ]
+NOTIC: [2] unlink(./Application/Html/131/order.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 989 行.
+SQL: SELECT * FROM `food_category_relative` WHERE `food_id` = 474  [ RunTime:0.0042s ]
+NOTIC: [2] unlink(./Application/Html/131/orderAjax180.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1008 行.
+NOTIC: [2] unlink(./Application/Html/131/orderPopup474.html): No such file or directory E:\yunniu\Application\Admin\Controller\DishesController.class.php 第 1012 行.
+
+[ 2017-03-24T15:19:13+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-03-24T15:19:13+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-03-24T15:24:10+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-03-24T15:24:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-03-24T15:34:47+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-03-24T15:34:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-03-24T17:45:05+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: login_account E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-03-24T17:45:05+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+

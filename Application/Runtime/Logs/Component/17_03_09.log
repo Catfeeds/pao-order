@@ -1,0 +1,15 @@
+[ 2017-03-09T14:52:46+08:00 ] 127.0.0.1 /component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0052s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0048s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0029s ]
+

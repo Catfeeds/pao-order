@@ -1,0 +1,49 @@
+<volist name = "cashierArr" id = "v">
+	<tr>
+		<td>{$key+1}</td>
+		<td>{$v.cashier_name}</td>
+		<td>{$v.cashier_phone}</td>
+		<td>
+			<if condition = "$v.cashier_sex eq 1">
+				男
+				<else />			
+				女
+			</if>
+		</td>
+		<td>
+			<button type="button" class="btn btn-info btn-sm"  data-toggle="modal" data-target="#addSort" onclick="modify({$v.cashier_id})" >编辑</button>
+			<button type="button" class="btn btn-default btn-sm" onclick = "del({$v.cashier_id})">删除</button>
+		</td>
+	</tr>
+</volist>
+<!--	<script>
+	
+    $("#detail-page").children().children("a").click(function(){
+        var page = parseInt($(this).data("page"));
+        console.log(page);
+        $.ajax({
+            url:"/index.php/admin/Accounts/deskInfo",
+            data:{"page":page},
+            type:"get",
+            success:function(data) {
+                $("#tbody").html(data);
+            },
+            error:function(){
+                alert("出错了");
+            }
+        });
+    });
+    
+    $("#sel").click(function(){
+				$.ajax({
+					type:"post",
+					url:"/index.php/admin/Accounts/selectBykey",
+					data:{"key":$("#key").val()},
+					success:function(data){
+						$("#tbody").html(data);
+					}
+				});
+			});
+  
+</script>-->
+

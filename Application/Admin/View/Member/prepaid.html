@@ -1,0 +1,24 @@
+<include file="Public/head"/>
+<body>
+	<div class="container-fluid">
+        <form>
+            <div id="memberList">
+                <foreach name="prepaid_rules" item="v">
+                    <div class="member-tab-item1 form-inline" id="delPrepaid">
+                        <span class="index1">{++$key}</span>.充
+                        <input class="form-control" type="text" name="account" value="{$v[account]}" disabled>元，送
+                        <input class="form-control" type="text" name="benefit" value="{$v[benefit]}" disabled>元={$v['account']+$v['benefit']}元
+                        <input type="hidden" name="id" value="{$v['id']}"/>
+                    </div>
+                </foreach>
+            </div>
+        </form>
+	</div>
+
+
+    <script src="__PUBLIC__/js/vip.js"></script>
+    <script src="__PUBLIC__/js/layer.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+[ 2017-03-14T17:53:07+08:00 ] 127.0.0.1 /index.php/component/test/jcm_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+ERR: 非法操作:jcm_test
+

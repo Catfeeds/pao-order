@@ -1,0 +1,170 @@
+<include file="Public/head"/>
+<!-- 打印机对接 -->
+<body>
+	<div class="container-fluid">
+		<P>厨房打印机：
+			<button class="btn btn-primary" onclick="addPrinter()">新增</button>
+		</P>
+		<table class="print-table">
+			<tr>
+				<td>名称</td>
+				<td class="text-center">IP地址</td>
+				<td>品牌</td>
+				<td>型号</td>
+				<td>端口</td>
+				<td>打印类型</td>
+			</tr>
+			<volist name="printList" id="vo">
+				<tr>
+					<td>{$vo.printer_name}</td>
+					<td>{$vo.printer_ip}</td>
+					<td>{$vo.printer_brand}</td>
+					<td>{$vo.printer_version}</td>
+					<td>{$vo.printer_port}</td>
+					<td>
+						<if condition="$vo.print_type eq 0">
+							主厨房
+							<else/>
+							副厨房
+						</if>
+					</td>
+					<td>
+						<button class="btn btn-default ml-10" data-printer_id="{$vo.printer_id}" onclick="deletePrinter(this)">删除</button>
+						<button class="btn btn-default ml-10" onclick="editPrinter(this)" data-printer_id="{$vo.printer_id}"
+								data-printer_name="{$vo.printer_name}"
+								data-printer_ip="{$vo.printer_ip}"
+								data-printer_brand="{$vo.printer_brand}"
+								data-printer_version="{$vo.printer_version}"
+								data-printer_port="{$vo.printer_port}"
+								data-print_type="{$vo.print_type}"
+								>编辑</button>
+					</td>
+				</tr>
+
+			</volist>
+		</table>
+	</div>
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="printModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">添加打印机</h4>
+				</div>
+				<div class="modal-body">
+					<form action="javascript:void(0)" id="printerInfo">
+						<input type="hidden" name="type" id="type" value="add">
+						<div class="form-group">
+							<label class="col-md-3" for="printer_name">打印机名称：</label>
+							<input type="text" value="" name="printer_name" id="printer_name" placeholder="请输入打印机名称">
+						</div>
+						<div class="form-group">
+							<label class="col-md-3" for="printer_ip">打印机IP：</label>
+							<input type="text" value="" name="printer_ip" id="printer_ip" placeholder="请输入打印机IP">
+						</div>
+						<div class="form-group">
+							<label class="col-md-3" for="printer_port">打印机端口：</label>
+							<input type="text" value="9100" name="printer_port" id="printer_port" readonly>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3" for="printer_brand">打印机品牌：</label>
+							<input type="text" value="" name="printer_brand" placeholder="打印机品牌" id="printer_brand">
+						</div>
+						<div class="form-group">
+							<label class="col-md-3" for="printer_version">打印机型号：</label>
+							<input type="text" value="" name="printer_version" id="printer_version" placeholder="打印机型号">
+						</div>
+						<div class="form-group">
+							<label class="col-md-3" for="printer_version">打印模板：</label>
+							<div class="col-md-4" style="margin-left: -18px"><img src="__PUBLIC__/images/receipt1.png" alt="" style="width: 150px"><br>
+								<label for="print_type1"><input type="radio" name="print_type" value="0" checked id="print_type1">
+									模板一</label>
+							</div>
+
+							<div  class="col-md-5"><img src="__PUBLIC__/images/receipt2.png" style="width: 150px" alt=""><br>
+								<label for="print_type2"> <input type="radio" name="print_type" value="1" id="print_type2" >
+									模板二</label>
+							</div>
+
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" onclick="submit_printer()">提交更改</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+</body>
+<script>
+	function addPrinter(){
+		$("#printModal").modal("show");
+		$("#printerInfo input").val("");
+		$("#printer_port").val("9100");
+		$("#type").val("add");
+	}
+
+	function editPrinter(obj){
+		$("#type").val("edit");
+		var data = $(obj).data();
+		$("#printerInfo").append('<input type="hidden" name="printer_id" id="type" value="'+data['printer_id']+'">');
+		$("#printer_name").val(data['printer_name']);
+		$("#printer_ip").val(data['printer_ip']);
+		$("#printer_port").val(data['printer_port']);
+		$("#printer_brand").val(data['printer_brand']);
+		$("#printer_version").val(data['printer_version']);
+		$("input[name=print_type]").each(function(){
+			if($(this).val() == data['print_type']){
+				console.log($(this));
+				$(this).prop("checked",true);
+			}
+		});
+
+
+		$("#printModal").modal("show");
+	}
+
+	function submit_printer(){
+		var form = $("#printerInfo")[0];
+		var formData = new FormData(form);
+		$.ajax({
+			url:'/index.php/admin/DataDock/addeditprinter',
+			data:formData,
+			type:'post',
+			dataType:'json',
+			cache:false,
+			processData:false,
+			contentType:false,
+			success:function(msg){
+				if(msg.code == 1){
+					self.location.href = "/index.php/admin/DataDock/printer";
+				}
+			},
+			error:function(){
+				console.log('访问出错');
+			}
+		});
+	}
+
+	function deletePrinter(obj){
+		var printer_id = $(obj).data("printer_id");
+		console.log(printer_id);
+		$.ajax({
+			url:"/index.php/admin/DataDock/deletePrinter",
+			data:{'printer_id':printer_id},
+			type:'post',
+			dataType:'json',
+			success:function(msg){
+				if(msg.code == 1){
+					self.location.href = "/index.php/admin/DataDock/printer";
+				}
+			},
+			error:function(){
+				console.log("访问出错了");
+			}
+		});
+	}
+</script>
+</html>

@@ -1,0 +1,228 @@
+<include file="Public/head"/>
+<!-- 点餐流程 -->
+<style>
+	.a-upload{
+   padding: 1em 1.5em;
+   height: 20px;
+   line-height: 3px;
+   position: relative;
+   cursor: pointer;
+   color: #888;
+   background: #fafafa;
+   border: 1px solid #ddd;
+   overflow: hidden;
+   display: inline-block;
+   *display: inline;
+   *zoom: 1;
+    background-color: #414040;
+	color: #fff;
+}
+
+.a-upload  input {
+   position: absolute;
+   font-size: 100px;
+   right: 0;
+   top: 0;
+   opacity: 0;
+   filter: alpha(opacity=0);
+   cursor: pointer
+}
+
+	
+</style>
+<body>
+	<div class="container-fluid">
+		<!-- 点餐流程 start -->
+		<div class="orderProcess">
+			<h4 class="blue">
+				<b>请正确选择用户的点餐流程：</b>
+			</h4>
+			<!-- 点餐流程选择 start -->
+			<div class="row" id="diancan">
+				<volist name = "info2" id = "v2">
+				<div class="col-xs-4 col-sm-2 process-item">
+					<p class="text-center">{$v2.process_name}</p>
+					<img src="{$v2.process_img}">
+					<p>
+						<if condition="$v2['process_id'] eq 3">
+							<input type="radio" name="adPage{$v2.process_id}" value="0" checked="checked" onchange="changestatu(this,{$v2.process_id})">
+							<span class="mr-20">开启</span>
+						<elseif condition="$v2['process_id'] eq 5"/>
+							<input type="radio" name="adPage{$v2.process_id}" value="0" checked="checked" onchange="changestatu(this,{$v2.process_id})">
+							<span class="mr-20">开启</span>
+						<else/>
+							<if condition = "$v2.process_status eq 1">
+							<input type="radio" name="adPage{$v2.process_id}" value="1" checked="checked" onchange="changestatu(this,{$v2.process_id})">						
+							<span class="mr-20">开启</span>
+							<input type="radio" name="adPage{$v2.process_id}" value="0" onchange="changestatu(this,{$v2.process_id})">
+							<span>关闭</span>
+							<else/>
+							<input type="radio" name="adPage{$v2.process_id}" value="1" onchange="changestatu(this,{$v2.process_id})">							
+							<span class="mr-20">开启</span>
+							<input type="radio" name="adPage{$v2.process_id}" value="0" checked="checked" onchange="changestatu(this,{$v2.process_id})">
+							<span>关闭</span>
+							</if>
+						</if>
+					</p>
+				</div>
+				</volist>
+			</div><!-- 点餐流程选择 end -->
+
+			<div class="adWord">
+				<h4 class="blue">
+					<b>下单成功提示语：</b>
+				</h4>
+				<p>
+					<input type="text" name = "advlang" value="{$info4}" onchange="changeadvlang()" class="form-control">
+				</p>
+			</div>
+		</div><!-- 点餐流程 end -->
+
+	
+		<!-- 广告设置 start-->
+		<div class="adSet">			
+			<h4 class="blue">
+				<b>广告设置：</b>
+			</h4>
+			<p>
+				每张图片间隔时间：<input type="text" value="{$info3}" size="2" onchange="changetime()" id="interval">秒
+			</p>
+			<!-- 横屏广告 start -->			
+			<div class="ad-horizontal"  id="mytr">
+				<!--id = row-->			
+				<div class="ad-left">
+					<p>横屏广告：</p>
+					<div class="ad-tips">分辨率：<br>1920*1080</div>
+					<div class="ad-tips">大小：<br>1M以下</div>
+				</div>
+				<div class="clearfix">
+					<volist name = "info" id = "v" offset="0" length='1'>
+						<div class="showimg pull-left">
+							<div class="ad-imgBox" id="{$v.advertisement_id}">
+								<img src="/{$v.advertisement_image_url}"></div>
+							<div class="text-right mt-5">
+								<form name="form1">
+									<a href="javascript:;" class="a-upload">
+										上传
+										<input type="file" name="default" onchange="preview1(this)"></a>
+								</form>
+							</div>
+						</div>
+					</volist>
+					<volist name = "info" id = "v" offset="1">
+						<div class="showimg pull-left">
+							<div class="ad-imgBox" id="{$v.advertisement_id}">
+								<img src="/{$v.advertisement_image_url}">			
+								<button class="delete-btn" onclick="deladver({$v.advertisement_id})">
+									<img src="__PUBLIC__/images/delete.png"></button>
+							</div>
+							<div class="text-right mt-5">
+								<form name="form1">
+									<a href="javascript:;" class="a-upload">
+										上传
+										<input type="file" name="change" onchange="preview1(this)"></a>
+								</form>
+							</div>
+						</div>
+					</volist>
+					<div class="showimg pull-left">
+						<div class="ad-imgBox">
+							<img src=""></div>
+						<div class="text-right mt-5">
+							<form name="form1">
+								<a href="javascript:;" class="a-upload">
+									上传
+									<input type="file" name="change" onchange="preview1(this)"></a>
+							</form>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<!-- 横屏广告 end -->			
+
+			<!-- 竖屏广告 start -->
+			<div class="ad-vertical" id="mytr1">
+				<div class="ad-left">
+					<p>竖屏广告：</p>
+					<div class="ad-tips">分辨率：<br>1080*1920</div>
+					<div class="ad-tips">大小：<br>1M以下</div>
+				</div>
+				<div class="clearfix">
+					<volist name = "info1" id = "v1" offset="0" length='1'>
+						<div class="showimg1 pull-left">
+							<div class="ad-imgBox"  id="{$v1.advertisement_id}">
+								<img src="/{$v1.advertisement_image_url}">
+							</div>
+
+							<div class="text-center mt-5">
+								<form name="form1">
+									<a href="javascript:;" class="a-upload">
+										上传
+										<input type="file" name="default" onchange="preview(this)">
+									</a>
+								</form>
+							</div>
+						</div>
+					</volist>
+					<volist name = "info1" id = "v1" offset="1">
+						<div class="showimg1 pull-left">
+							<div class="ad-imgBox"  id="{$v1.advertisement_id}">
+								<img src="/{$v1.advertisement_image_url}">					
+								<button class="delete-btn" onclick="deladver1({$v1.advertisement_id})">
+									<img src="__PUBLIC__/images/delete.png"></button>
+							</div>
+
+							<div class="text-center mt-5">
+								<form name="form1" >
+									<a href="javascript:;" class="a-upload">
+										上传
+										<input type="file" name="change" onchange="preview(this)"></a>
+								</form>
+							</div>
+						</div>
+					</volist>
+					<div class="showimg1 pull-left">
+						<div class="ad-imgBox">
+							<img src="">
+						</div>
+
+						<div class="text-center mt-5">
+							<form name="form1">
+								<a href="javascript:;" class="a-upload">
+									上传
+									<input type="file" name="change" onchange="preview(this)"></a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!-- 竖屏广告 start -->
+			
+			<!-- showNumber广告start -->
+			<div class="ad-showNum" id="mytr1">
+				<div class="ad-left">
+					<p>叫号屏广告：</p>
+				</div>
+				<div class="clearfix">
+					<volist name = "info5" id = "v5" offset="0" length='1'>
+						<div class="showimg1 pull-left">
+							<div class="ad-imgBox">
+								<img src="/{$v5.advertisement_image_url}">
+							</div>
+							<div class="text-center mt-5">
+								<form name="form1">
+									<a href="javascript:;" class="a-upload">
+										上传
+										<input type="file" name="default" onchange="preview2(this)" id="{$v5.advertisement_id}"></a>
+								</form>
+							</div>
+						</div>
+					</volist>
+				</div>
+			</div><!-- showNumber广告start -->
+
+		</div><!-- 广告设置 end-->
+		
+	</div>
+</body>
+<script type="text/javascript" src="__PUBLIC__/js/Moudle_index.js"></script>
+</html>

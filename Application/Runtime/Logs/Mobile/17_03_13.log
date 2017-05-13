@@ -1,0 +1,1677 @@
+[ 2017-03-13T09:41:07+08:00 ] 127.0.0.1 /index.php/mobile/member/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-03-13T09:41:13+08:00 ] 127.0.0.1 /index.php/mobile/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-03-13T09:41:20+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0088s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: info E:\yunniu\Application\Runtime\Cache\Mobile\ae532f5b54e125d302adfd22247e8af4.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-03-13T09:41:22+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-03-13T09:41:31+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-03-13T09:41:33+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-03-13T09:41:35+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-03-13T09:41:36+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-03-13T09:41:37+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-03-13T09:41:37+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0072s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-03-13T09:41:37+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-03-13T09:41:38+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0087s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-03-13T09:41:38+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0154s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-03-13T09:41:39+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0075s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-03-13T09:41:39+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-03-13T09:41:39+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0072s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-03-13T09:41:40+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-03-13T09:41:41+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-03-13T09:41:41+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-03-13T09:41:48+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0077s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-03-13T09:41:49+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0088s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-03-13T09:41:52+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-03-13T09:41:57+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/202.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0091s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2017-03-13T09:42:13+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/204.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-03-13T09:42:16+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0086s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-03-13T09:42:28+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0191s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0121s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0069s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25  [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: info E:\yunniu\Application\Runtime\Cache\Mobile\ae532f5b54e125d302adfd22247e8af4.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-03-13T09:42:30+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-03-13T09:42:38+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0076s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0067s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0062s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-03-13T09:42:39+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/205.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-03-13T09:43:03+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/199.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-03-13T09:43:11+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/199.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0103s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-03-13T09:43:12+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/199.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2017-03-13T09:43:13+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/199.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-03-13T09:43:13+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/199.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0075s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-03-13T09:43:44+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0065s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0065s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0061s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2017-03-13T09:43:45+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0099s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0089s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0085s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-03-13T09:43:47+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/206.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-03-13T09:44:09+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0075s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0108s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-03-13T09:44:11+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/206.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0077s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-03-13T09:45:14+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0093s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0110s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0071s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0061s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-03-13T09:45:45+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0085s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0072s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0093s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-03-13T09:45:47+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/207.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0087s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-03-13T09:45:55+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/207.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0075s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-03-13T09:45:57+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/207.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-03-13T09:45:58+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/207.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0098s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-03-13T10:18:26+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0069s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0074s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0060s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-03-13T10:18:55+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0074s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0095s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2017-03-13T10:18:57+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0073s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-03-13T10:19:05+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0218s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-03-13T10:19:07+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-03-13T10:19:08+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0095s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2017-03-13T10:19:09+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-03-13T10:19:10+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-03-13T10:19:45+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0067s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0065s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-03-13T10:19:46+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0069s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0065s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-03-13T10:19:52+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0079s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0070s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0060s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-03-13T10:19:53+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-03-13T10:19:55+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0069s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-03-13T10:19:58+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-03-13T10:48:28+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-03-13T10:48:38+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-03-13T10:48:48+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0072s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0069s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0057s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-03-13T10:48:49+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-03-13T10:49:48+08:00 ] 127.0.0.1 /index.php/mobile/member/saleNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0073s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `score_goods_order` [ RunTime:0.0062s ]
+SQL: SELECT *,count('id') as num FROM `score_goods_order` INNER JOIN score_goods on score_goods_order.goods_id = score_goods.id  WHERE score_goods_order.order_status = 1 AND score_goods_order.business_id = '25' GROUP BY score_goods_order.goods_name ORDER BY num desc  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0091s ]
+SQL: SELECT `business_id` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `score_goods` WHERE `business_id` = 25 AND `id` NOT IN ('197','199','195','198')  [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-03-13T10:49:51+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0075s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-03-13T10:49:58+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0081s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-03-13T10:50:01+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0097s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-03-13T10:50:17+08:00 ] 127.0.0.1 /index.php/Mobile/member/goods/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+SQL: SHOW COLUMNS FROM `score_goods` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `score_goods` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0064s ]
+SQL: SELECT `score` FROM `vip` WHERE `openid` = 'oToCav5pz2onMKIJro8Bf46Awl6c' LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-03-13T15:45:26+08:00 ] 127.0.0.1 /index.php/mobile/member/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: translate E:\yunniu\Application\Runtime\Cache\Mobile\b9a9d60d81d1ab1291fa5c348094b23b.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+

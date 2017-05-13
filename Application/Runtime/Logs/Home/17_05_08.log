@@ -1,0 +1,2431 @@
+[ 2017-05-08T12:22:01+08:00 ] 127.0.0.1 /index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-05-08T12:22:20+08:00 ] 127.0.0.1 /index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0213s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25788588' WHERE `code_id` = 260 [ RunTime:0.0664s ]
+SQL: UPDATE `code` SET `last_time`='1494217339' WHERE `code_id` = 260 [ RunTime:0.0885s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.1112s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > 0 AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0766s ]
+SQL: SELECT * FROM `advertisement` WHERE `advertisement_type` = 0 AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-05-08T12:22:22+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0051s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25788585' WHERE `code_id` = 260 [ RunTime:0.0633s ]
+SQL: UPDATE `code` SET `last_time`='1494217342' WHERE `code_id` = 260 [ RunTime:0.0361s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0043s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'index' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '1' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0046s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-05-08T12:22:26+08:00 ] 127.0.0.1 /index.php/Home/Index/processRoute/process/select/order_type/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0045s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25788582' WHERE `code_id` = 260 [ RunTime:0.0414s ]
+SQL: UPDATE `code` SET `last_time`='1494217345' WHERE `code_id` = 260 [ RunTime:0.0367s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0045s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'select' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '2' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `process_status` FROM `restaurant_process` WHERE `process_id` = 4 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.1039s ]
+SQL: SHOW COLUMNS FROM `category_time` [ RunTime:0.0807s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 AND `is_timing` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `food_category_id` FROM `food_category` WHERE `restaurant_id` = 131 AND `is_timing` = 1  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `category_id` FROM `category_time` WHERE `time1` < 1494217345 AND `time2` > 1494217345 AND `category_id` IN ('198')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_category_timing` [ RunTime:0.0768s ]
+SQL: SELECT DISTINCT  `food_category_id`,`start_time`,`end_time` FROM `food_category_timing` WHERE `timing_day` LIKE '%1%' AND `food_category_id` IN ('198')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: category_id_list D:\yunniu\yunniu\Application\Home\Controller\IndexController.class.php 第 185 行.
+SQL: SELECT * FROM `food_category` WHERE `food_category_id` IN ('198') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0682s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0348s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 180  [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 475 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.2940s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 476 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0400s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 479 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0294s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 483 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0168s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 484 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0080s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0011s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 474 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0019s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 175  [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 436 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0975s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 438 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0059s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 439 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0022s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 440 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0085s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 443 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 444 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0008s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 445 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 433 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0078s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 434 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0016s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 567 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 568 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 442 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 435 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0017s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 179  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 468 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 469 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 470 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 471 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 472 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 473 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 177  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 465 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 466 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 467 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 182  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 494 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 495 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 498 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 499 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 491 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 195  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 539 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 540 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 543 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 544 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 176  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 447 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 448 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 449 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 450 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 451 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 452 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 453 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 454 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 455 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 456 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 457 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 458 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 459 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 460 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 461 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 462 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 463 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 464 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 530 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 580 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 581 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 582 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 583 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 584 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 585 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 574 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 198  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 559 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `is_sale` = 1 AND `food_id` IN ('475','476','479','483','484','565','474','436','438','439','440','443','444','445','433','434','567','568','575','446','565','442','435','468','469','470','471','472','473','465','466','467','494','495','498','499','491','539','540','543','544','447','448','449','450','451','452','453','454','455','456','457','458','459','460','461','462','463','464','530','575','446','580','581','582','583','584','585','574','565','559') ORDER BY sort asc  [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0518s ]
+SQL: SELECT `prom_price` FROM `prom` WHERE `prom_id` = 544 AND `prom_start_time` < 1494217346 AND `prom_end_time` > 1494217346 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `prom_price` FROM `prom` WHERE `prom_id` = 559 AND `prom_start_time` < 1494217346 AND `prom_end_time` > 1494217346 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2017-05-08T12:29:41+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 180  [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 475 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0013s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 475 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 476 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 476 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 479 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0008s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 479 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 483 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 483 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 484 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 484 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 474 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0008s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 474 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2017-05-08T12:29:44+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 175  [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 436 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0014s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 436 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 438 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0022s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 438 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 439 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0011s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 439 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 440 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 440 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 443 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 443 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 444 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 444 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 445 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 445 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 433 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 433 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 434 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0014s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 434 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 567 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 567 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 568 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 568 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 575 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 446 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 442 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 442 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 435 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0017s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 435 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2017-05-08T12:29:45+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 175  [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 436 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0014s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 436 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 438 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0023s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 438 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 439 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0015s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 439 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 440 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0011s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 440 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 443 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 443 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 444 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 444 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 445 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 445 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 433 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 433 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 434 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0016s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 434 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 567 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 567 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 568 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 568 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 575 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 446 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 565 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 442 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 442 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 435 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0018s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 435 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2017-05-08T12:29:46+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 179  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 468 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 468 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 469 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 469 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 470 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 470 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 471 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 471 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 472 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 472 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 473 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 473 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2017-05-08T12:29:47+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 179  [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 468 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 468 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 469 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 469 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 470 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 470 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 471 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 471 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 472 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 472 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 473 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 473 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-05-08T12:29:48+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 179  [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 468 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 468 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 469 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 469 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 470 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 470 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 471 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 471 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 472 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 472 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 473 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 473 AND `restaurant_id` = 131 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2017-05-08T12:29:50+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/468
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0081s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 468 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 468 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0041s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 468 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.1199s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 468  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.1418s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 655  [ RunTime:0.0008s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 656  [ RunTime:0.0003s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 724  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-05-08T12:30:11+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/472
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 472 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 472 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0047s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 472 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0048s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 472  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0047s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 661  [ RunTime:0.0005s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 662  [ RunTime:0.0004s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 728  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2017-05-08T12:30:26+08:00 ] 127.0.0.1 /index.php/home/index/PlaceOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0043s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2269 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2272 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2527 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 468 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 468 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2286 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2288 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2541 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 472 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 472 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `add_time` BETWEEN 1494172800 AND 1494259199 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0850s ]
+SQL: INSERT INTO `order` (`order_sn`,`add_time`,`total_amount`,`table_num`,`restaurant_id`,`order_type`,`terminal_order`) VALUES ('DC0013117050812302500001','1494217825','0.04','0','131','2','1') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order_food` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `order_food_attribute` [ RunTime:0.1148s ]
+SQL: SELECT * FROM `food` WHERE ( food_id=468 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2269 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2272 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2527 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `order_food` (`order_id`,`food_id`,`food_name`,`food_num`,`food_price2`,`district_id`) VALUES ('13743','468','五粮液','3','0.01','0') [ RunTime:0.0004s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2269 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2269 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2269 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0041s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 655 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 655 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('40度','0.00','54','0','17270') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2272 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2272 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2272 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 656 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 656 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('1000ML','0.00','54','0','17270') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2527 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2527 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2527 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 724 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 724 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('可乐','0.00','55','0','17270') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `food` WHERE ( food_id=472 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2286 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2288 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2541 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food` (`order_id`,`food_id`,`food_name`,`food_num`,`food_price2`,`district_id`) VALUES ('13743','472','青岛啤酒','1','0.01','0') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2286 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2286 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2286 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 661 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 661 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('纯生','0.00','54','0','17271') [ RunTime:0.0002s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2288 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2288 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2288 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 662 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 662 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('250ML','0.00','54','0','17271') [ RunTime:0.0002s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2541 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2541 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2541 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 728 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 728 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('水','0.00','55','0','17271') [ RunTime:0.0003s ]
+
+[ 2017-05-08T12:30:27+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/order/price/0.04/order_sn/DC0013117050812302500001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0047s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25788100' WHERE `code_id` = 260 [ RunTime:0.0408s ]
+SQL: UPDATE `code` SET `last_time`='1494217827' WHERE `code_id` = 260 [ RunTime:0.0366s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0044s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'order' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '3' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0047s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0045s ]
+SQL: SELECT `total_amount`,`order_sn` FROM `order` WHERE `order_sn` = 'DC0013117050812302500001' LIMIT 1   [ RunTime:0.0628s ]
+SQL: SHOW COLUMNS FROM `pay_select` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `pay_select` WHERE `restaurant_id` = 131  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: qr_code D:\yunniu\yunniu\Application\Runtime\Cache\Home\408256b6e4552a5c13510b18800a515c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-08T12:30:27+08:00 ] 127.0.0.1 /index.php/home/WxChat/qrc/order_sn/DC0013117050812302500001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-08T12:30:48+08:00 ] 127.0.0.1 /index.php/home/index/jpushCashPay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0083s ]
+SQL: SELECT `order_id`,`restaurant_id` FROM `order` WHERE `order_sn` = 'DC0013117050812302500001' LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `restaurant_id` = 131 AND `add_time` BETWEEN 1494172800 AND 1494259199 AND `pay_num` <> 0 LIMIT 1   [ RunTime:0.0070s ]
+SQL: UPDATE `order` SET `order_status`='1',`pay_type`='3',`pay_num`='001' WHERE `order_id` = 13743 [ RunTime:0.0849s ]
+
+[ 2017-05-08T12:31:15+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/order/price/0.04/order_sn/DC0013117050812302500001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0048s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25788052' WHERE `code_id` = 260 [ RunTime:0.0705s ]
+SQL: UPDATE `code` SET `last_time`='1494217875' WHERE `code_id` = 260 [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0045s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'order' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '3' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0048s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0044s ]
+SQL: SELECT `total_amount`,`order_sn` FROM `order` WHERE `order_sn` = 'DC0013117050812302500001' LIMIT 1   [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `pay_select` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `pay_select` WHERE `restaurant_id` = 131  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined index: qr_code D:\yunniu\yunniu\Application\Runtime\Cache\Home\408256b6e4552a5c13510b18800a515c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2017-05-08T12:35:09+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0081s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 433 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 433 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0042s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 433 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0040s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 433  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0042s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 620  [ RunTime:0.0005s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 621  [ RunTime:0.0003s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 689  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2017-05-08T12:35:12+08:00 ] 127.0.0.1 /index.php/home/index/PlaceOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0041s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2163 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2376 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 433 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 433 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `add_time` BETWEEN 1494172800 AND 1494259199 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0065s ]
+SQL: INSERT INTO `order` (`order_sn`,`add_time`,`total_amount`,`table_num`,`restaurant_id`,`order_type`,`terminal_order`) VALUES ('DC0013117050812351200002','1494218112','0.01','0','131','1','1') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order_food` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `order_food_attribute` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food` WHERE ( food_id=433 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2163 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2376 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food` (`order_id`,`food_id`,`food_name`,`food_num`,`food_price2`,`district_id`) VALUES ('13744','433','蒸排骨-1打','1','0.01','6') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2163 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2163 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2163 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0043s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 620 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 620 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('免辣','0.00','54','0','17272') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2376 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2376 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2376 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 689 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 689 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('可乐','0.00','55','0','17272') [ RunTime:0.0002s ]
+
+[ 2017-05-08T12:35:13+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/order/price/0.01/order_sn/DC0013117050812351200002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0046s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787814' WHERE `code_id` = 260 [ RunTime:0.0520s ]
+SQL: UPDATE `code` SET `last_time`='1494218113' WHERE `code_id` = 260 [ RunTime:0.0369s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0043s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'order' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '3' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0047s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0049s ]
+SQL: SELECT `total_amount`,`order_sn` FROM `order` WHERE `order_sn` = 'DC0013117050812351200002' LIMIT 1   [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `pay_select` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `pay_select` WHERE `restaurant_id` = 131  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: qr_code D:\yunniu\yunniu\Application\Runtime\Cache\Home\408256b6e4552a5c13510b18800a515c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2017-05-08T12:35:13+08:00 ] 127.0.0.1 /index.php/home/WxChat/qrc/order_sn/DC0013117050812351200002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+
+[ 2017-05-08T12:35:35+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/436
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0046s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 436 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 436 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0044s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 436 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0042s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 436  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0042s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 624  [ RunTime:0.0004s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 685  [ RunTime:0.0003s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 897  [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-05-08T12:35:38+08:00 ] 127.0.0.1 /index.php/home/index/PlaceOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0041s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2174 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2360 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 3237 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 436 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 436 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `add_time` BETWEEN 1494172800 AND 1494259199 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0066s ]
+SQL: INSERT INTO `order` (`order_sn`,`add_time`,`total_amount`,`table_num`,`restaurant_id`,`order_type`,`terminal_order`) VALUES ('DC0013117050812353800003','1494218138','0.02','0','131','1','1') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order_food` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `order_food_attribute` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food` WHERE ( food_id=436 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2174 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2360 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 3237 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `order_food` (`order_id`,`food_id`,`food_name`,`food_num`,`food_price2`,`district_id`) VALUES ('13745','436','烧卖','1','0.02','6') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2174 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2174 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2174 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0043s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 624 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 624 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('2个','0.00','54','0','17273') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2360 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2360 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2360 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 685 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 685 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('水','0.00','55','0','17273') [ RunTime:0.0002s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 3237 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 3237 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 3237 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 897 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 897 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('测试1','0.01','54','1','17273') [ RunTime:0.0002s ]
+
+[ 2017-05-08T12:35:39+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/order/price/0.02/order_sn/DC0013117050812353800003
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0046s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787788' WHERE `code_id` = 260 [ RunTime:0.0602s ]
+SQL: UPDATE `code` SET `last_time`='1494218139' WHERE `code_id` = 260 [ RunTime:0.0361s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0046s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'order' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '3' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0047s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0046s ]
+SQL: SELECT `total_amount`,`order_sn` FROM `order` WHERE `order_sn` = 'DC0013117050812353800003' LIMIT 1   [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `pay_select` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `pay_select` WHERE `restaurant_id` = 131  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: qr_code D:\yunniu\yunniu\Application\Runtime\Cache\Home\408256b6e4552a5c13510b18800a515c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-05-08T12:35:39+08:00 ] 127.0.0.1 /index.php/home/WxChat/qrc/order_sn/DC0013117050812353800003
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+
+[ 2017-05-08T12:39:03+08:00 ] 127.0.0.1 /index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0044s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787584' WHERE `code_id` = 260 [ RunTime:0.1273s ]
+SQL: UPDATE `code` SET `last_time`='1494218343' WHERE `code_id` = 260 [ RunTime:0.0359s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > 0 AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0047s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `advertisement` WHERE `advertisement_type` = 0 AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-05-08T12:40:03+08:00 ] 127.0.0.1 /index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0212s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787524' WHERE `code_id` = 260 [ RunTime:0.0611s ]
+SQL: UPDATE `code` SET `last_time`='1494218403' WHERE `code_id` = 260 [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > 0 AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0048s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `advertisement` WHERE `advertisement_type` = 0 AND `restaurant_id` = 131  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2017-05-08T12:40:21+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0046s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787506' WHERE `code_id` = 260 [ RunTime:0.0734s ]
+SQL: UPDATE `code` SET `last_time`='1494218421' WHERE `code_id` = 260 [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0048s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'index' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '1' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2017-05-08T12:40:30+08:00 ] 127.0.0.1 /index.php/Home/Index/processRoute/process/select/order_type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0491s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787497' WHERE `code_id` = 260 [ RunTime:0.0445s ]
+SQL: UPDATE `code` SET `last_time`='1494218430' WHERE `code_id` = 260 [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0046s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'select' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '2' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `process_status` FROM `restaurant_process` WHERE `process_id` = 4 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `category_time` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 AND `is_timing` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `food_category_id` FROM `food_category` WHERE `restaurant_id` = 131 AND `is_timing` = 1  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `category_id` FROM `category_time` WHERE `time1` < 1494218430 AND `time2` > 1494218430 AND `category_id` IN ('198')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_category_timing` [ RunTime:0.0044s ]
+SQL: SELECT DISTINCT  `food_category_id`,`start_time`,`end_time` FROM `food_category_timing` WHERE `timing_day` LIKE '%1%' AND `food_category_id` IN ('198')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: category_id_list D:\yunniu\yunniu\Application\Home\Controller\IndexController.class.php 第 185 行.
+SQL: SELECT * FROM `food_category` WHERE `food_category_id` IN ('198') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0040s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 180  [ RunTime:0.0008s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 475 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0014s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 476 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 479 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0008s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 483 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 484 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 474 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 175  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 436 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0016s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 438 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0023s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 439 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0011s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 440 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 443 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 444 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 445 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 433 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0020s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 434 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0015s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 567 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 568 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 442 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0008s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 435 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0017s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 179  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 468 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 469 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 470 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 471 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 472 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 473 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 177  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 465 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 466 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 467 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 182  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 494 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 495 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 498 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 499 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 491 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 195  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 539 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 540 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 543 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 544 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 176  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 447 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 448 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 449 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 450 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 451 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 452 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0011s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 453 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 454 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 455 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 456 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 457 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 458 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 459 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 460 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 461 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 462 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 463 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 464 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 530 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 580 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 581 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 582 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 583 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 584 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 585 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 574 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 198  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 559 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `food` WHERE `is_sale` = 1 AND `food_id` IN ('475','476','479','483','484','565','474','436','438','439','440','443','444','445','433','434','567','568','575','446','565','442','435','468','469','470','471','472','473','465','466','467','494','495','498','499','491','539','540','543','544','447','448','449','450','451','452','453','454','455','456','457','458','459','460','461','462','463','464','530','575','446','580','581','582','583','584','585','574','565','559') ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0051s ]
+SQL: SELECT `prom_price` FROM `prom` WHERE `prom_id` = 544 AND `prom_start_time` < 1494218430 AND `prom_end_time` > 1494218430 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `prom_price` FROM `prom` WHERE `prom_id` = 559 AND `prom_start_time` < 1494218430 AND `prom_end_time` > 1494218430 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0047s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2017-05-08T12:43:28+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/435
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0194s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 435 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 435 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0041s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 435 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0040s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 435  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0046s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 623  [ RunTime:0.0005s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 684  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2017-05-08T12:43:31+08:00 ] 127.0.0.1 /index.php/home/index/PlaceOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0039s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2171 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2357 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 435 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 435 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `add_time` BETWEEN 1494172800 AND 1494259199 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0070s ]
+SQL: INSERT INTO `order` (`order_sn`,`add_time`,`total_amount`,`table_num`,`restaurant_id`,`order_type`,`terminal_order`) VALUES ('DC0013117050812433100004','1494218611','0.01','0','131','1','1') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order_food` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `order_food_attribute` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food` WHERE ( food_id=435 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2171 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2357 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `order_food` (`order_id`,`food_id`,`food_name`,`food_num`,`food_price2`,`district_id`) VALUES ('13746','435','凤爪','1','0.01','5') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2171 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2171 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2171 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0041s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 623 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 623 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('少辣','0.00','54','0','17274') [ RunTime:0.0003s ]
+SQL: SELECT `attribute_name` FROM `food_attribute` WHERE `food_attribute_id` = 2357 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_price` FROM `food_attribute` WHERE `food_attribute_id` = 2357 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `attribute_type_id` FROM `food_attribute` WHERE `food_attribute_id` = 2357 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `print_id` FROM `attribute_type` WHERE ( attribute_type_id = 684 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `count_type` FROM `attribute_type` WHERE ( attribute_type_id = 684 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `order_food_attribute` (`food_attribute_name`,`food_attribute_price`,`print_id`,`count_type`,`order_food_id`) VALUES ('水','0.00','54','0','17274') [ RunTime:0.0003s ]
+
+[ 2017-05-08T12:43:32+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/order/price/0.01/order_sn/DC0013117050812433100004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0215s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787315' WHERE `code_id` = 260 [ RunTime:0.0494s ]
+SQL: UPDATE `code` SET `last_time`='1494218612' WHERE `code_id` = 260 [ RunTime:0.0367s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0045s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'order' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '3' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0045s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0044s ]
+SQL: SELECT `total_amount`,`order_sn` FROM `order` WHERE `order_sn` = 'DC0013117050812433100004' LIMIT 1   [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `pay_select` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `pay_select` WHERE `restaurant_id` = 131  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: qr_code D:\yunniu\yunniu\Application\Runtime\Cache\Home\408256b6e4552a5c13510b18800a515c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-05-08T12:43:32+08:00 ] 127.0.0.1 /index.php/home/WxChat/qrc/order_sn/DC0013117050812433100004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+
+[ 2017-05-08T12:48:33+08:00 ] 127.0.0.1 /index.php/Home/Index/processRoute/process/select/order_type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0050s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25787014' WHERE `code_id` = 260 [ RunTime:0.0865s ]
+SQL: UPDATE `code` SET `last_time`='1494218913' WHERE `code_id` = 260 [ RunTime:0.0936s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0234s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'select' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '2' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `process_status` FROM `restaurant_process` WHERE `process_id` = 4 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `category_time` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 AND `is_timing` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `food_category_id` FROM `food_category` WHERE `restaurant_id` = 131 AND `is_timing` = 1  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `category_id` FROM `category_time` WHERE `time1` < 1494218913 AND `time2` > 1494218913 AND `category_id` IN ('198')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_category_timing` [ RunTime:0.0043s ]
+SQL: SELECT DISTINCT  `food_category_id`,`start_time`,`end_time` FROM `food_category_timing` WHERE `timing_day` LIKE '%1%' AND `food_category_id` IN ('198')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: category_id_list D:\yunniu\yunniu\Application\Home\Controller\IndexController.class.php 第 185 行.
+SQL: SELECT * FROM `food_category` WHERE `food_category_id` IN ('198') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0039s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 180  [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 475 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0012s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 476 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 479 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0008s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 483 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 484 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 474 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 175  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 436 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0013s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 438 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0022s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 439 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0011s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 440 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0010s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 443 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 444 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0006s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 445 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 433 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0021s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 434 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0015s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 567 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 568 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 442 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0009s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 435 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0024s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 179  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 468 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 469 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 470 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 471 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 472 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 473 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 177  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 465 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 466 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 467 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 182  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 494 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 495 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 498 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 499 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 491 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 195  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 539 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 540 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 543 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 544 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 176  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 447 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 448 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 449 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 450 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 451 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 452 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 453 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 454 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 455 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 456 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 457 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 458 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 459 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 460 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 461 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 462 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 463 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 464 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 530 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 575 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 446 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 580 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 581 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 582 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 583 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 584 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 585 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 574 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 565 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 198  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 559 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `food` WHERE `is_sale` = 1 AND `food_id` IN ('475','476','479','483','484','565','474','436','438','439','440','443','444','445','433','434','567','568','575','446','565','442','435','468','469','470','471','472','473','465','466','467','494','495','498','499','491','539','540','543','544','447','448','449','450','451','452','453','454','455','456','457','458','459','460','461','462','463','464','530','575','446','580','581','582','583','584','585','574','565','559') ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0045s ]
+SQL: SELECT `prom_price` FROM `prom` WHERE `prom_id` = 544 AND `prom_start_time` < 1494218913 AND `prom_end_time` > 1494218913 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `prom_price` FROM `prom` WHERE `prom_id` = 559 AND `prom_start_time` < 1494218913 AND `prom_end_time` > 1494218913 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0046s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2017-05-08T12:52:27+08:00 ] 127.0.0.1 /index.php/Home/Index/processRoute/process/select/order_type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-05-08T12:52:33+08:00 ] 127.0.0.1 /index.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-05-08T12:52:48+08:00 ] 127.0.0.1 /index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0081s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25786759' WHERE `code_id` = 260 [ RunTime:0.0923s ]
+SQL: UPDATE `code` SET `last_time`='1494219168' WHERE `code_id` = 260 [ RunTime:0.0775s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > 0 AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `advertisement` WHERE `advertisement_type` = 0 AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-05-08T12:55:30+08:00 ] 127.0.0.1 /index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0048s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25786597' WHERE `code_id` = 260 [ RunTime:0.1000s ]
+SQL: UPDATE `code` SET `last_time`='1494219330' WHERE `code_id` = 260 [ RunTime:0.0437s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > 0 AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0045s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `advertisement` WHERE `advertisement_type` = 0 AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2017-05-08T13:12:10+08:00 ] 127.0.0.1 /index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0044s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25785598' WHERE `code_id` = 260 [ RunTime:0.0908s ]
+SQL: UPDATE `code` SET `last_time`='1494220329' WHERE `code_id` = 260 [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > 0 AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0047s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `advertisement` WHERE `advertisement_type` = 0 AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-05-08T13:12:12+08:00 ] 127.0.0.1 /index.php/home/index/processRoute/process/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0084s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25785595' WHERE `code_id` = 260 [ RunTime:0.0719s ]
+SQL: UPDATE `code` SET `last_time`='1494220332' WHERE `code_id` = 260 [ RunTime:0.0361s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0044s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'index' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '1' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 131 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-05-08T13:16:50+08:00 ] 127.0.0.1 /index.php/Home/Index/processRoute/process/select/order_type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0193s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25785317' WHERE `code_id` = 260 [ RunTime:0.0602s ]
+SQL: UPDATE `code` SET `last_time`='1494220610' WHERE `code_id` = 260 [ RunTime:0.0364s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0048s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'select' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '2' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 226 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `process_status` FROM `restaurant_process` WHERE `process_id` = 4 AND `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `category_time` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 226 AND `is_timing` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `food_category_id` FROM `food_category` WHERE `restaurant_id` = 226 AND `is_timing` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0042s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 314  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 987 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0381s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 315  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `is_sale` = 1 AND `food_id` IN ('987') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-05-08T13:16:52+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/315
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 315  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-05-08T13:17:44+08:00 ] 127.0.0.1 /index.php/home/index/showtypefood/type/315
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_category_relative` WHERE `food_category_id` = 315  [ RunTime:0.0004s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 988 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `food_id` = 988 AND `restaurant_id` = 226 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-05-08T13:17:50+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.1034s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0045s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0042s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 988  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2017-05-08T13:18:44+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0048s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0043s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0041s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 988  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0042s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 1425  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-05-08T13:20:00+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0052s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0042s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0041s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 988  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0041s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 1425  [ RunTime:0.0005s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 1426  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2017-05-08T13:20:19+08:00 ] 127.0.0.1 /index.php/home/index/findfoodinfo/food_id/988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SELECT `food_price` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `is_prom` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0045s ]
+SQL: SELECT `food_id`,`food_name`,`food_img`,`food_desc` FROM `food` WHERE `food_id` = 988 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute_type` [ RunTime:0.0044s ]
+SQL: SELECT `attribute_type_id`,`type_name`,`select_type` FROM `attribute_type` WHERE `food_id` = 988  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_attribute` [ RunTime:0.0053s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 1425  [ RunTime:0.0006s ]
+SQL: SELECT `food_attribute_id`,`attribute_name`,`attribute_price` FROM `food_attribute` WHERE `attribute_type_id` = 1426  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+NOTIC: [8] Undefined index: food_price D:\yunniu\yunniu\Application\Runtime\Cache\Home\e91dede39b14a3e235383f46a8cf0160.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-05-08T13:40:01+08:00 ] 127.0.0.1 /index.php/Home/Index/processRoute/process/select/order_type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0195s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `code` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `code` SET `rest_timestamp`='25783927' WHERE `code_id` = 260 [ RunTime:0.0586s ]
+SQL: UPDATE `code` SET `last_time`='1494222000' WHERE `code_id` = 260 [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0053s ]
+SQL: SELECT `process_id`,`sort` FROM `process` WHERE `process_url` = 'select' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `restaurant_process` WHERE ( `process_id` > '2' AND `process_id` <> 4  ) AND `process_status` = 1 AND `restaurant_id` = 226 ORDER BY process_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `process_status` FROM `restaurant_process` WHERE `process_id` = 4 AND `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `category_time` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 226 AND `is_timing` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `food_category_id` FROM `food_category` WHERE `restaurant_id` = 226 AND `is_timing` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `food_category_relative` [ RunTime:0.0050s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 314  [ RunTime:0.0005s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 987 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0007s ]
+SQL: SELECT `food_id` FROM `food_category_relative` WHERE `food_category_id` = 315  [ RunTime:0.0003s ]
+SQL:  select t1.food_num as num from order_food t1 inner join
+                        `order` t2 on t1.order_id = t2.order_id and t1.food_id = 988 and t2.order_status in ('3','11','12')
+                        and t2.pay_time between 1494172800 and 1494259199 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `food` WHERE `is_sale` = 1 AND `food_id` IN ('987','988') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `prom` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0048s ]
+SQL: SELECT `tplcolor_id` FROM `restaurant` WHERE `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-05-08T21:23:06+08:00 ] ::1 /yunniu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000623s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001326s ]
+
+[ 2017-05-08T21:24:24+08:00 ] ::1 /yunniu/index.php/home/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: 非法操作:login
+
+[ 2017-05-08T21:45:33+08:00 ] ::1 /yunniu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000560s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001904s ]
+

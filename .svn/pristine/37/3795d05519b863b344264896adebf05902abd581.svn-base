@@ -1,0 +1,15 @@
+<include file="Public/head"/>
+<!-- 支付完成页 -->
+<body>
+<!-- 	<header class="home-header">
+		<a href="#">
+			<img src="__PUBLIC__/images/lt.png">
+			<b>重新点餐</b>
+		</a>
+	</header> -->
+		<header class="finish-header">{$restaurant_name}</header>
+	<div class="finish">下单成功，请就位等餐</div>
+
+	<button class="finish-btn" onclick="location='/index.php/Mobile/Index/index'">关闭</button>
+</body>
+</html>

@@ -1,0 +1,105 @@
+.table-input{
+    width: 50%;
+}
+
+.btn-time-delete{
+    background:transparent;
+    border: 0;
+}
+
+.btn-time-delete span{
+    color: red;
+    width: 100%;
+    border: 0;
+}
+
+.div-border{
+    padding-bottom: 0.3%;
+    margin-bottom: 0.2%;
+    border-bottom: 0.8px solid #ddddbb;
+}
+.row-margin-top {
+    margin-top: 1.5%;
+}
+
+.img-div{
+    position:relative;
+    width: 100%;
+}
+
+.img-div img{
+    width: 100%;
+}
+
+.btn-close{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 0;
+    width: 15%;
+}
+
+.add-btn{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.add-btn img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.datetimepicker-hours .switch{
+    color: white;
+}
+.datetimepicker-minutes .switch{
+    color: white;
+}
+
+.el-date-editor.el-input{
+    width: 100%;
+}
+
+.el-input__inner {
+    max-height: 37px;
+}
+
+.el-select__tags {
+    overflow: hidden;
+    max-height: 28px;
+}
+
+.text-center{
+    white-space: nowrap;
+}
+
+.a-upload {
+    padding: 4px 10px;
+    height: 100%;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}

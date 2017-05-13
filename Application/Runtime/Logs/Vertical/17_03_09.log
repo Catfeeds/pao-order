@@ -1,0 +1,56 @@
+[ 2017-03-09T14:52:46+08:00 ] 127.0.0.1 /index.php/vertical/template/serviceRoute.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `process_id` NOT IN (4) AND `process_status` = 1 AND `restaurant_id` = 100 AND ( process_id > 0 ) ORDER BY process_id LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0054s ]
+SQL: SELECT `group_id` FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `page_screen` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `group_detail` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 5 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-03-09T14:52:48+08:00 ] 127.0.0.1 /index.php/vertical/template/serviceRoute.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `process_id` NOT IN (4) AND `process_status` = 1 AND `restaurant_id` = 100 AND ( process_id > 0 ) ORDER BY process_id LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `process_url` FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0053s ]
+SQL: SELECT `group_id` FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `page_screen` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `group_detail` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 5 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+

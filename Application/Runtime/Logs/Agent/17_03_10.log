@@ -1,0 +1,1959 @@
+[ 2017-03-10T09:15:16+08:00 ] 127.0.0.1 /index.php/agent/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-03-10T09:15:16+08:00 ] 127.0.0.1 /index.php/Agent/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-03-10T09:15:23+08:00 ] 127.0.0.1 /index.php/agent/index/checklogin/username/root/pwd/root/code/vjh4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `business` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `business` WHERE `business_account` = 'root' LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2017-03-10T09:15:23+08:00 ] 127.0.0.1 /index.php/agent/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-03-10T09:15:23+08:00 ] 127.0.0.1 /index.php/Agent/Store/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `restaurant` WHERE `business_id` = 25 AND `status` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`address`,`telephone1`,`telephone2`,`city3` FROM `restaurant` WHERE `business_id` = 25 AND `status` = 1 LIMIT 0,13   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0065s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 55 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 57 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 382 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 91 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 99 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 100 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2316 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 114 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 381 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 118 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 131 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 456 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 151 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 157 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2316 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 164 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 458 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 165 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-03-10T10:45:26+08:00 ] 127.0.0.1 /index.php/Agent/Members/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-03-10T10:45:26+08:00 ] 127.0.0.1 /index.php/Agent/Members/vip_group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-03-10T10:45:27+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0056s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-03-10T10:45:30+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/3/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `vip` LIMIT 16,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-03-10T10:45:37+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html?keyword=18318189269
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189269%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189269%' AND `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-03-10T10:45:44+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/3/keyword/18318189269
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189269%' LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189269%' LIMIT 16,8   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-03-10T10:45:46+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/1/keyword/18318189269
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189269%' LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189269%' LIMIT 0,8   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-03-10T10:45:50+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0039s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 0,8   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-03-10T10:45:59+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-03-10T10:46:02+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0096s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='唇铭77',`sex`='1',`phone`='18318189263',`birthday`='2016/2/2',`group_id`='0' WHERE `id` = 58 [ RunTime:0.0414s ]
+
+[ 2017-03-10T10:46:03+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-03-10T10:46:06+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/1?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-03-10T10:46:12+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0041s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2017-03-10T10:46:13+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/2/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `vip` LIMIT 8,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-03-10T10:46:14+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-03-10T10:46:17+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='唇铭00',`sex`='1',`phone`='18318189263',`birthday`='2016/2/2',`group_id`='0' WHERE `id` = 30 [ RunTime:0.0318s ]
+
+[ 2017-03-10T10:46:18+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 8,8   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-03-10T10:46:22+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 8,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-03-10T10:46:23+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 8,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-03-10T10:47:45+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-03-10T10:47:46+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-03-10T10:47:47+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-03-10T10:47:51+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 0,8   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-03-10T10:47:53+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-03-10T10:48:53+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html?keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-03-10T10:48:55+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/2/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `vip` LIMIT 8,8   [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-03-10T10:48:58+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-03-10T10:49:00+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0077s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='唇铭00',`sex`='1',`phone`='18318189263',`birthday`='2016/2/2',`group_id`='0' WHERE `id` = 30 [ RunTime:0.0452s ]
+
+[ 2017-03-10T10:49:00+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 8,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-03-10T10:49:03+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 8,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-03-10T10:49:12+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2?keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0038s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 8,8   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-03-10T10:50:11+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-03-10T10:50:12+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/1/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `vip` LIMIT 0,8   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-03-10T10:50:16+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0041s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-03-10T10:50:18+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-03-10T10:50:20+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/1/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` LIMIT 0,8   [ RunTime:0.0058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-03-10T10:50:30+08:00 ] 127.0.0.1 /index.php/agent/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-03-10T10:50:30+08:00 ] 127.0.0.1 /index.php/Agent/Store/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `restaurant` WHERE `business_id` = 25 AND `status` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`address`,`telephone1`,`telephone2`,`city3` FROM `restaurant` WHERE `business_id` = 25 AND `status` = 1 LIMIT 0,13   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0067s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 55 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 57 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 382 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 91 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0054s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 99 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 100 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2316 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 114 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 381 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 118 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 131 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 456 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 151 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2314 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 157 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 2316 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 164 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT `name` FROM `region` WHERE `id` = 458 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `login_account` FROM `restaurant_manager` WHERE `restaurant_id` = 165 AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-03-10T10:50:32+08:00 ] 127.0.0.1 /index.php/Agent/Members/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-03-10T10:50:32+08:00 ] 127.0.0.1 /index.php/Agent/Members/vip_group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' E:\yunniu\Application\Runtime\Cache\Agent\a374f10294e6d2bddd3132104ad7a290.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-03-10T10:50:34+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-03-10T10:50:37+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/2/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `vip` LIMIT 8,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-03-10T10:50:39+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/1/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `vip` LIMIT 0,8   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-03-10T10:50:43+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/3/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `vip` LIMIT 16,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-03-10T10:50:44+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/1/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0047s ]
+SQL: SELECT * FROM `vip` LIMIT 0,8   [ RunTime:0.0092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-03-10T10:50:45+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/2/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `vip` LIMIT 8,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-03-10T10:50:46+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-03-10T10:50:48+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/1/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-03-10T10:50:49+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-03-10T10:50:50+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0080s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='郭勇平',`sex`='1',`phone`='18823281764',`birthday`='2017/2/10',`group_id`='69' WHERE `id` = 22 [ RunTime:0.0327s ]
+
+[ 2017-03-10T10:50:50+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-03-10T10:50:54+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/1?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 0,8   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-03-10T10:50:57+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-03-10T10:50:59+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/2/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` LIMIT 8,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-03-10T10:51:00+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-03-10T10:51:01+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='唇铭00',`sex`='1',`phone`='18318189263',`birthday`='2016/2/2',`group_id`='0' WHERE `id` = 30 [ RunTime:0.0338s ]
+
+[ 2017-03-10T10:51:01+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 8,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-03-10T10:51:05+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/2?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 8,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-03-10T10:51:08+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-03-10T10:51:45+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2017-03-10T10:51:47+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/2/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `vip` LIMIT 8,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-03-10T10:51:49+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html?keyword=18318189263
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `phone` LIKE '%18318189263%' AND `business_id` = 25 LIMIT 0,8   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-03-10T10:51:51+08:00 ] 127.0.0.1 /index.php/Agent/Members/members.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 0,8   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-03-10T10:51:53+08:00 ] 127.0.0.1 /index.php/agent/members/vipPage/page/3/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group`  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` LIMIT 16,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\8d37b0c23058cb2e8ecaff4968ce23ea.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-03-10T10:51:55+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-03-10T10:56:59+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0118s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='发发发888',`sex`='0',`phone`='18318189265',`birthday`='2017/2/6',`group_id`='0' WHERE `id` = 38 [ RunTime:0.0505s ]
+
+[ 2017-03-10T10:56:59+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 16,8   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-03-10T10:57:01+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2017-03-10T10:57:03+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0151s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='唇铭666',`sex`='1',`phone`='18318189263',`birthday`='2016/2/2',`group_id`='0' WHERE `id` = 37 [ RunTime:0.0266s ]
+
+[ 2017-03-10T10:57:03+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 16,8   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-03-10T11:05:40+08:00 ] 127.0.0.1 /index.php/agent/members/members/page/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vip` WHERE `business_id` = 25 LIMIT 1   [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: url_replace E:\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `vip` WHERE `business_id` = 25 LIMIT 16,8   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 36 行.
+NOTIC: [8] Undefined index: keyword E:\yunniu\Application\Runtime\Cache\Agent\d21f55fcced9244301c6ecf1b56a3cfc.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-03-10T11:05:42+08:00 ] 127.0.0.1 /index.php/agent/members/getVipInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `vip` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-03-10T11:05:43+08:00 ] 127.0.0.1 /index.php/agent/members/vip_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.0066s ]
+SQL: SELECT `birthday` FROM `vip` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\yunniu\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `vip` SET `username`='发发发888',`sex`='0',`phone`='18318189265',`birthday`='2017/2/6',`group_id`='0' WHERE `id` = 38 [ RunTime:0.0474s ]
+

@@ -1,0 +1,73 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header"></header>
+	<div class="container-fluid number">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 number-left">
+				<p>请领取设备旁的餐牌号，并正确输入</p>
+				<!--<input type="text"><button class="check-btn" onclick="location='{:U('Index/order')}'">确认</button>-->
+				<input type="text" id="numtext"><button class="check-btn" id="btn">确认</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 number-right">
+				<table class="number-table">
+					<tr>
+						<td>
+							<button class="num-btn">1</button>
+						</td>
+						<td>
+							<button class="num-btn">2</button>
+						</td>
+						<td>
+							<button class="num-btn">3</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="num-btn">4</button>
+						</td>
+						<td>
+							<button class="num-btn">5</button>
+						</td>
+						<td>
+							<button class="num-btn">6</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="num-btn">7</button>
+						</td>
+						<td>
+							<button class="num-btn">8</button>
+						</td>
+						<td>
+							<button class="num-btn">9</button>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<button class="num-btn">0</button>
+						</td>
+						<td>
+							<button id="del-num">
+								<img src="__PUBLIC__/images/del-btn.png">
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer class="home-footer"></footer>
+</body>
+<script>
+	$('#btn').click(function(){
+		var tablenum = $('#numtext').val();
+		if(tablenum){
+		window.location.href = "/index.php/Mobile/index/order/tablenum/"+tablenum+"";
+		}else{
+			alert("请输入餐桌号");
+		}
+	});	
+</script>
+</html>

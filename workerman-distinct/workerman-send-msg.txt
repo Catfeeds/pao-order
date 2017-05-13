@@ -1,0 +1,2 @@
+php start.php start -d 开启服务
+php start.php start -d 关闭服务

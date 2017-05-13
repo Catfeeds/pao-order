@@ -1,0 +1,10 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">立即激活</header>
+	<div class="container-fluid">
+		<input type="text" name="" placeholder="请输入激活码" class="form-control mt-30">
+		<button class="check-btn activate-btn">激活</button>
+	</div>
+	<footer class="home-footer"></footer>
+</body>
+</html>

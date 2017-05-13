@@ -1,0 +1,132 @@
+<include file="Public/head"/>
+<!-- 支付对接 -->
+<script src="__PUBLIC__/js/PayInfo.js"></script>
+<body>
+	<div class="container-fluid">
+		<ul id="myTab" class="nav nav-tabs">
+			<li class="active">
+				<a href="#wxpay" data-toggle="tab">
+					微信支付
+				</a>
+			</li>
+			<li><a href="#alipay" data-toggle="tab">支付宝支付</a></li>
+			<li><a href="#pay-select" data-toggle="tab">支付类型选择</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade in active" id="wxpay">
+				<form action="javascript:void(0)" id="wxpayForm">
+					<div class="form-group" style="margin-top: 12px">
+						<label for="wxpay_appid">
+							APPID:
+							<input class="form-control" type="text" value="{$wx_config.wxpay_appid}" placeholder="绑定支付的APPID" name="wxpay_appid" id="wxpay_appid">
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="wxpay_mchid">
+							MCHID:
+							<input class="form-control" type="text" value="{$wx_config.wxpay_mchid}" placeholder="商户号" name="wxpay_mchid" id="wxpay_mchid">
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="wxpay_key">
+							KEY:
+							<input class="form-control" type="text" value="{$wx_config.wxpay_key}" placeholder="商户支付密钥" name="wxpay_key" id="wxpay_key">
+						</label>
+
+					</div>
+					<div class="form-group">
+						<label for="wxpay_appsecret">
+							APPSECRET:
+							<input class="form-control" type="text" value="{$wx_config.wxpay_appsecret}" placeholder="公众帐号secert" name="wxpay_appsecret" id="wxpay_appsecret">
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="wxpay_child_mchid">
+							CHILD_MCHID:
+							<input class="form-control" type="text" value="{$wx_config.wxpay_child_mchid}" placeholder="子商户号（用于代理）" name="wxpay_child_mchid" id="wxpay_child_mchid">
+						</label>
+					</div>
+				</form>
+				<button data-paytype="wxpay" onclick="submitPayInfo(this)">
+					修改/添加
+				</button>
+			</div>
+			<div class="tab-pane fade" id="alipay">
+				<div class="container-fluid">
+					<div class="row">
+						<h1 class="">授权步骤</h1>
+					</div>
+					<div class="row">
+						<div><h3>第一步：申请支付宝对接</h3></div>
+						<a style="margin-left: 98px" target="_blank" href="https://b.alipay.com/settling/index.htm?appId=2016121604351905" class="btn btn-primary btn-sm">前去支付宝申请</a>
+						<p>准备资料：</p>
+						<p>照片：营业执照、身份证正反面、店铺门前与店内照片</p>
+						<p>资料：银联卡卡号、支付宝账号</p>
+					</div>
+					<div class="row">
+						<h3>第二步：授权</h3>
+						<!--<p>请在下方准确填写你要授权的支付宝PID</p>-->
+						<!--<p>点击下方确定按钮，跳转到支付宝登陆页面</p>-->
+						<!--<p>登陆支付宝，点击确认授权</p>-->
+						<div class="container-fluid">
+							<div class="row">
+								支付宝PID：<input type="text" name="aliNumber" id="aliPid">
+								<a href="javascript:void(0)" target="_blank" class="btn btn-primary btn-sm" onclick="changeUrl()">前去授权</a>
+							</div>
+							<div class="row">
+								授权的PID：
+								<if condition="$pid eq 0">
+									<span>未授权</span>
+									<else/>
+									<span>{$pid}</span>
+								</if>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="pay-select">
+				<div class="row">
+					<volist name="pay_select" id="pa_vo">
+						<div class="col-xs-3">
+							<div class="pay-item">
+								<p>{$pa_vo.name}</p>
+								<img src="{$pa_vo.img}">
+								<if condition="$pa_vo['value'] eq 1">
+									<input type="radio" name="{$pa_vo.config_name}" value="1" checked onchange="changeStatus(this)">开启
+									<input type="radio" name="{$pa_vo.config_name}" value="0" onchange="changeStatus(this)">关闭
+									<else/>
+									<input type="radio" name="{$pa_vo.config_name}" value="1" onchange="changeStatus(this)">开启
+									<input type="radio" name="{$pa_vo.config_name}" value="0" checked onchange="changeStatus(this)">关闭
+								</if>
+							</div>
+						</div>
+					</volist>
+				</div>
+			</div>			
+		</div>
+	</div>
+</body>
+<script>
+	function changeStatus(obj){
+		var value = $(obj).val();
+		var config_name = $(obj).attr("name");
+		console.log(config_name);
+		$.ajax({
+			url:"/index.php/Admin/dataDock/selectPay",
+			data:{"value":value,"config_name":config_name},
+			type:"post",
+			success:function(){
+				console.log("成功");
+			}
+		});
+	}
+	function changeUrl(){
+		var aliNumber = $("#aliPid").val();
+		if(aliNumber){
+			var url = "/index.php/component/test/testCreate/aliNumber/"+aliNumber;
+			window.open(url);
+		}
+	}
+</script>
+</html>

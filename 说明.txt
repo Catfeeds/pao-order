@@ -1,0 +1,20 @@
+总代理登录：
+http://www.diancan.com/index.php/allAgent/Index/index
+admin   fy@1212founya
+
+
+代理登录：
+http://www.diancan.com/index.php/agent/Index/login
+root root
+
+
+商铺：
+http://www.diancan.com/index.php/admin/index/login
+admin 123456
+
+
+
+
+前台点餐：
+http://www.diancan.com/index.php/component/test/test
+666666

@@ -1,0 +1,1580 @@
+[ 2017-05-07T16:32:45+08:00 ] 127.0.0.1 /index.php/Admin/Sale/food_chart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0320s ]
+SQL: SELECT `order_id` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: all_foodinfo D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 50 行.
+NOTIC: [8] Undefined variable: all_attributeArr D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 100 行.
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2017-05-07T20:40:29+08:00 ] 127.0.0.1 /index.php/Admin/Sale/food_chart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0063s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0053s ]
+SQL: SELECT `order_id` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: all_foodinfo D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 50 行.
+NOTIC: [8] Undefined variable: all_attributeArr D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 100 行.
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2017-05-07T20:40:30+08:00 ] 127.0.0.1 /index.php/Admin/Sale/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0200s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0054s ]
+SQL: SELECT `total_amount` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('0','1','2') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2017-05-07T20:40:31+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0232s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2017-05-07T20:40:32+08:00 ] 127.0.0.1 /index.php/admin/sale/orderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0087s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0048s ]
+SQL: SELECT `total_amount` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('2','1','0','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('2','1','0','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('2','1','0','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0 ORDER BY order_id desc LIMIT 0,50   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `order_food` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `order_food_attribute` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-05-07T22:32:31+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0094s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-05-07T22:32:32+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0054s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2017-05-07T22:32:33+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0065s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-05-07T22:32:58+08:00 ] 127.0.0.1 /index.php/Admin/Member/vip_group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0092s ]
+SQL: SELECT `business_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 41 行.
+NOTIC: [8] Use of undefined constant group_name - assumed 'group_name' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 40 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\yunniu\yunniu\Application\Runtime\Cache\Admin\67be86bae4225b11142094e54e1692dd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-05-07T22:33:03+08:00 ] 127.0.0.1 /index.php/Admin/Member/discount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0224s ]
+SQL: SELECT `business_id` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `vip_group` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `vip_group` WHERE `business_id` = 25  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `discount` [ RunTime:0.0505s ]
+SQL: SELECT * FROM `discount` WHERE `restaurant_id` = 131  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `set` [ RunTime:0.0607s ]
+SQL: SELECT * FROM `set` WHERE `type` = 0 AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-05-07T22:34:30+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0082s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-05-07T22:38:37+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0085s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: restaurant_url D:\yunniu\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url D:\yunniu\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2017-05-07T22:39:31+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0090s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: restaurant_url D:\yunniu\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url D:\yunniu\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-05-07T22:39:41+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0196s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `restaurant_id` = 131  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0067s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `adv_language` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2017-05-07T22:39:57+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0200s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `restaurant_id` = 131  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `adv_language` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2017-05-07T22:39:59+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/device.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0224s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0593s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 131 AND `page_screen` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `group_detail` [ RunTime:0.0642s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 131 AND `page_screen` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 13 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-05-07T22:40:05+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/mobile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0195s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 131 AND `page_screen` = 3  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `group_detail` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-05-07T22:40:07+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/receipt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0090s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `restaurant_bill` [ RunTime:0.0551s ]
+SQL: SELECT * FROM `restaurant_bill` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001098s ]
+
+[ 2017-05-07T22:40:08+08:00 ] 127.0.0.1 /index.php/admin/restaurant/getBillStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0088s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant_bill` [ RunTime:0.0047s ]
+SQL: SELECT `restaurant_name`,`qrcode`,`address`,`restaurant_phone`,`take_out_phone`,`subscription`,`take_num`,`desk_num`,`forward_prompt`,`pay_prompt`,`down_prompt`,`pay_num`,`pay_prompt2`,`order_type` FROM `restaurant_bill` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-05-07T22:40:12+08:00 ] 127.0.0.1 /index.php/Admin/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0086s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `code` WHERE `restaurant_id` = 131  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 55 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 137 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 138 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 139 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 188 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 189 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 222 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 230 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 260 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 261 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 263 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 268 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 269 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 270 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 271 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 272 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 273 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 274 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 275 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 276 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 277 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 278 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 279 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 280 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 284 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 287 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 289 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 292 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 306 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 307 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 309 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 312 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 313 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 315 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 322 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 328 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 330 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 345 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 378 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 380 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 412 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 430 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 432 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 433 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 434 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 441 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 442 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 444 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 445 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 446 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 447 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 449 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 450 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 455 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 458 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 459 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 474 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 476 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 477 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 478 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 479 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 486 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 520 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 561 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 575 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 584 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 602 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `device` WHERE `code_id` = 603 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\41b529fcda1c7909d8584fcefd19a8bc.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-05-07T22:40:14+08:00 ] 127.0.0.1 /index.php/Admin/device/show_num_device.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0051s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0468s ]
+SQL: SELECT `config_value` FROM `config` WHERE `config_type` = 'functionality' AND `config_name` = 'show_num' AND `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2017-05-07T22:40:16+08:00 ] 127.0.0.1 /index.php/admin/api/getEquipmentList/equipment_type/yell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `equipment` [ RunTime:0.0764s ]
+SQL: SELECT * FROM `equipment` WHERE `equipment_type` = 'yell' AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0718s ]
+SQL: SHOW COLUMNS FROM `yell_cancel` [ RunTime:0.0572s ]
+SQL: SELECT `district_id` FROM `restaurant_district` WHERE `restaurant_id` = 131 AND `yell_equipment_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yell_cancel` WHERE `yell_equipment_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-07T22:40:17+08:00 ] 127.0.0.1 /index.php/admin/api/getDistrictList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `restaurant_district` [ RunTime:0.0051s ]
+SQL: SELECT `district_id`,`district_name`,`yell_equipment_id` FROM `restaurant_district` WHERE `restaurant_id` = 131  [ RunTime:0.0004s ]
+
+[ 2017-05-07T22:40:18+08:00 ] 127.0.0.1 /index.php/Admin/Device/wechat.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0051s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2017-05-07T22:40:19+08:00 ] 127.0.0.1 /index.php/Admin/billBoard/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2017-05-07T22:40:20+08:00 ] 127.0.0.1 /index.php/admin/billBoard/bill_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bill_board` [ RunTime:0.0328s ]
+SQL: SELECT * FROM `bill_board` WHERE `restaurant_id` = 131 AND `bill_board_status` = 1 AND `is_active` = 1  [ RunTime:0.0006s ]
+
+[ 2017-05-07T22:40:21+08:00 ] 127.0.0.1 /index.php/Admin/Device/deskInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0053s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT `wx_order_title` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qrc_code` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `qrc_code` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qrc_device` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `qrc_device` WHERE `qrc_code_id` = 63 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `desk` [ RunTime:0.0472s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `desk` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `desk` WHERE `restaurant_id` = 131 ORDER BY desk_id desc LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2017-05-07T22:40:24+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0058s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2017-05-07T22:40:33+08:00 ] 127.0.0.1 /index.php/Admin/Accounts/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0057s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cashier` [ RunTime:0.0506s ]
+SQL: SELECT * FROM `cashier` WHERE `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\f3944eb5f2daab71d53fda639444e6f8.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2017-05-07T22:40:38+08:00 ] 127.0.0.1 /index.php/Admin/Accounts/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0092s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cashier` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cashier` WHERE `restaurant_id` = 131  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\f3944eb5f2daab71d53fda639444e6f8.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-05-07T22:40:39+08:00 ] 127.0.0.1 /index.php/Admin/Accounts/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0049s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cashier` [ RunTime:0.0596s ]
+SQL: SELECT * FROM `cashier` WHERE `restaurant_id` = 131  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\f3944eb5f2daab71d53fda639444e6f8.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2017-05-07T22:40:50+08:00 ] 127.0.0.1 /index.php/Admin/DataDock/dataForPay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0049s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `config` WHERE `config_type` = 'wxpay' AND `restaurant_id` = 131  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `config` WHERE `config_type` = 'alipay' AND `restaurant_id` = 131  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_select` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_select` WHERE `restaurant_id` = 131  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `restaurant_other_info` [ RunTime:0.0529s ]
+SQL: SELECT * FROM `restaurant_other_info` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-05-07T22:40:53+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0052s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2017-05-07T22:41:50+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0091s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: restaurant_url D:\yunniu\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url D:\yunniu\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2017-05-07T22:42:00+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0055s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 131 AND `advertisement_type` = 2  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `restaurant_id` = 131  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `adv_language` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-07T22:42:05+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/device.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0054s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 131 AND `page_screen` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `group_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 131 AND `page_screen` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 13 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-05-07T22:42:12+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/mobile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0052s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 131 AND `page_screen` = 3  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `group_detail` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `group_detail` WHERE `group_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-05-07T22:42:18+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/receipt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0090s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `restaurant_bill` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `restaurant_bill` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2017-05-07T22:42:19+08:00 ] 127.0.0.1 /index.php/admin/restaurant/getBillStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0061s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `restaurant_bill` [ RunTime:0.0054s ]
+SQL: SELECT `restaurant_name`,`qrcode`,`address`,`restaurant_phone`,`take_out_phone`,`subscription`,`take_num`,`desk_num`,`forward_prompt`,`pay_prompt`,`down_prompt`,`pay_num`,`pay_prompt2`,`order_type` FROM `restaurant_bill` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-05-07T22:47:33+08:00 ] 127.0.0.1 /index.php/Admin/Dishes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0053s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_category` WHERE `restaurant_id` = 131 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `food` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: url_replace D:\yunniu\yunniu\ThinkPHP\Library\Think\PageAjax.class.php 第 73 行.
+SQL: SELECT * FROM `food` WHERE `restaurant_id` = 131 ORDER BY sort asc LIMIT 0,8   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-05-07T22:47:40+08:00 ] 127.0.0.1 /index.php/Admin/Sale/food_chart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0089s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0054s ]
+SQL: SELECT `order_id` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: all_foodinfo D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 50 行.
+NOTIC: [8] Undefined variable: all_attributeArr D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 100 行.
+NOTIC: [8] Undefined variable: page D:\yunniu\yunniu\Application\Runtime\Cache\Admin\91cf7cdc48f9f7d072466b017d141f4e.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-05-07T22:47:42+08:00 ] 127.0.0.1 /index.php/Admin/Sale/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0057s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0053s ]
+SQL: SELECT `total_amount` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('0','1','2') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0076s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2017-05-07T22:47:43+08:00 ] 127.0.0.1 /index.php/admin/sale/orderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0056s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT `total_amount` FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('2','1','0','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('2','1','0','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0 LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT * FROM `order` WHERE `pay_time` BETWEEN 1494086400 AND 1496246399 AND `pay_type` IN ('2','1','0','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0 ORDER BY order_id desc LIMIT 0,50   [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `order_food` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `order_food_attribute` [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-05-07T22:47:48+08:00 ] 127.0.0.1 /index.php/Admin/Sale/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0047s ]
+SQL: SELECT `pay_time` FROM `order` WHERE `pay_time` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `restaurant_id` = 131 AND `order_status` <> 0  [ RunTime:0.0114s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1483200000 AND 1485878399 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1483200000 AND 1485878399 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1483200000 AND 1485878399 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1483200000 AND 1485878399 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1483200000 AND 1485878399 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0114s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1485878400 AND 1488297599 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1485878400 AND 1488297599 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1485878400 AND 1488297599 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1485878400 AND 1488297599 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1485878400 AND 1488297599 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1488297600 AND 1490975999 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1488297600 AND 1490975999 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1488297600 AND 1490975999 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1488297600 AND 1490975999 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1488297600 AND 1490975999 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1490976000 AND 1493567999 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1490976000 AND 1493567999 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1490976000 AND 1493567999 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1490976000 AND 1493567999 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1490976000 AND 1493567999 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1493568000 AND 1496246399 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1493568000 AND 1496246399 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1493568000 AND 1496246399 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1493568000 AND 1496246399 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1493568000 AND 1496246399 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1496246400 AND 1498838399 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1496246400 AND 1498838399 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1496246400 AND 1498838399 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1496246400 AND 1498838399 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1496246400 AND 1498838399 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1498838400 AND 1501516799 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1498838400 AND 1501516799 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1498838400 AND 1501516799 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1498838400 AND 1501516799 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1498838400 AND 1501516799 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1501516800 AND 1504195199 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1501516800 AND 1504195199 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1501516800 AND 1504195199 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1501516800 AND 1504195199 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1501516800 AND 1504195199 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1504195200 AND 1506787199 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1504195200 AND 1506787199 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1504195200 AND 1506787199 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1504195200 AND 1506787199 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1504195200 AND 1506787199 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1506787200 AND 1509465599 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1506787200 AND 1509465599 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1506787200 AND 1509465599 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1506787200 AND 1509465599 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1506787200 AND 1509465599 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1509465600 AND 1512057599 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1509465600 AND 1512057599 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1509465600 AND 1512057599 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1509465600 AND 1512057599 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1509465600 AND 1512057599 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1512057600 AND 1514735999 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1512057600 AND 1514735999 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1512057600 AND 1514735999 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1512057600 AND 1514735999 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_time` BETWEEN 1512057600 AND 1514735999 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493568000 AND 1493654399 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493568000 AND 1493654399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493568000 AND 1493654399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493568000 AND 1493654399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493568000 AND 1493654399 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493654400 AND 1493740799 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493654400 AND 1493740799 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493654400 AND 1493740799 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493654400 AND 1493740799 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493654400 AND 1493740799 LIMIT 1   [ RunTime:0.0116s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493740800 AND 1493827199 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493740800 AND 1493827199 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493740800 AND 1493827199 LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493740800 AND 1493827199 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493740800 AND 1493827199 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493827200 AND 1493913599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493827200 AND 1493913599 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493827200 AND 1493913599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493827200 AND 1493913599 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493827200 AND 1493913599 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493913600 AND 1493999999 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493913600 AND 1493999999 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493913600 AND 1493999999 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493913600 AND 1493999999 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493913600 AND 1493999999 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494000000 AND 1494086399 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494000000 AND 1494086399 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494000000 AND 1494086399 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494000000 AND 1494086399 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494000000 AND 1494086399 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494086400 AND 1494172799 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494086400 AND 1494172799 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494086400 AND 1494172799 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494086400 AND 1494172799 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494086400 AND 1494172799 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494172800 AND 1494259199 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494172800 AND 1494259199 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494172800 AND 1494259199 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494172800 AND 1494259199 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494172800 AND 1494259199 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494259200 AND 1494345599 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494259200 AND 1494345599 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494259200 AND 1494345599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494259200 AND 1494345599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494259200 AND 1494345599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494345600 AND 1494431999 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494345600 AND 1494431999 LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494345600 AND 1494431999 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494345600 AND 1494431999 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494345600 AND 1494431999 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494432000 AND 1494518399 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494432000 AND 1494518399 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494432000 AND 1494518399 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494432000 AND 1494518399 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494432000 AND 1494518399 LIMIT 1   [ RunTime:0.0068s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494518400 AND 1494604799 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494518400 AND 1494604799 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494518400 AND 1494604799 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494518400 AND 1494604799 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494518400 AND 1494604799 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494604800 AND 1494691199 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494604800 AND 1494691199 LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494604800 AND 1494691199 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494604800 AND 1494691199 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494604800 AND 1494691199 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494691200 AND 1494777599 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494691200 AND 1494777599 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494691200 AND 1494777599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494691200 AND 1494777599 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494691200 AND 1494777599 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494777600 AND 1494863999 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494777600 AND 1494863999 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494777600 AND 1494863999 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494777600 AND 1494863999 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494777600 AND 1494863999 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494864000 AND 1494950399 LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494864000 AND 1494950399 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494864000 AND 1494950399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494864000 AND 1494950399 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494864000 AND 1494950399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494950400 AND 1495036799 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494950400 AND 1495036799 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494950400 AND 1495036799 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494950400 AND 1495036799 LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1494950400 AND 1495036799 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495036800 AND 1495123199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495036800 AND 1495123199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495036800 AND 1495123199 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495036800 AND 1495123199 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495036800 AND 1495123199 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495296000 AND 1495382399 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495296000 AND 1495382399 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495296000 AND 1495382399 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495296000 AND 1495382399 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495296000 AND 1495382399 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495382400 AND 1495468799 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495468800 AND 1495555199 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495555200 AND 1495641599 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495555200 AND 1495641599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495555200 AND 1495641599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495555200 AND 1495641599 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495555200 AND 1495641599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495641600 AND 1495727999 LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495641600 AND 1495727999 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495641600 AND 1495727999 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495641600 AND 1495727999 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495641600 AND 1495727999 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495728000 AND 1495814399 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495728000 AND 1495814399 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495728000 AND 1495814399 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495728000 AND 1495814399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495728000 AND 1495814399 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495814400 AND 1495900799 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495814400 AND 1495900799 LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495814400 AND 1495900799 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495814400 AND 1495900799 LIMIT 1   [ RunTime:0.0111s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495814400 AND 1495900799 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495900800 AND 1495987199 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495900800 AND 1495987199 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495900800 AND 1495987199 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495900800 AND 1495987199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495900800 AND 1495987199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495987200 AND 1496073599 LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495987200 AND 1496073599 LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495987200 AND 1496073599 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495987200 AND 1496073599 LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1495987200 AND 1496073599 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496073600 AND 1496159999 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496073600 AND 1496159999 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496073600 AND 1496159999 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496073600 AND 1496159999 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496073600 AND 1496159999 LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496160000 AND 1496246399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496160000 AND 1496246399 LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496160000 AND 1496246399 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496160000 AND 1496246399 LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1496160000 AND 1496246399 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1490976000 AND 1491062399 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1490976000 AND 1491062399 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1490976000 AND 1491062399 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1490976000 AND 1491062399 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1490976000 AND 1491062399 LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491062400 AND 1491148799 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491062400 AND 1491148799 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491062400 AND 1491148799 LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491062400 AND 1491148799 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491062400 AND 1491148799 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491148800 AND 1491235199 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491148800 AND 1491235199 LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491148800 AND 1491235199 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491148800 AND 1491235199 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491148800 AND 1491235199 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491235200 AND 1491321599 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491235200 AND 1491321599 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491235200 AND 1491321599 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491235200 AND 1491321599 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491235200 AND 1491321599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491321600 AND 1491407999 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491321600 AND 1491407999 LIMIT 1   [ RunTime:0.0111s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491321600 AND 1491407999 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491321600 AND 1491407999 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491321600 AND 1491407999 LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491408000 AND 1491494399 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491408000 AND 1491494399 LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491408000 AND 1491494399 LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491408000 AND 1491494399 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491408000 AND 1491494399 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491494400 AND 1491580799 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491494400 AND 1491580799 LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491494400 AND 1491580799 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491494400 AND 1491580799 LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491494400 AND 1491580799 LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491580800 AND 1491667199 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491580800 AND 1491667199 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491580800 AND 1491667199 LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491580800 AND 1491667199 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491580800 AND 1491667199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491667200 AND 1491753599 LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491667200 AND 1491753599 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491667200 AND 1491753599 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491667200 AND 1491753599 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491667200 AND 1491753599 LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491753600 AND 1491839999 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491753600 AND 1491839999 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491753600 AND 1491839999 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491753600 AND 1491839999 LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491753600 AND 1491839999 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491840000 AND 1491926399 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491840000 AND 1491926399 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491840000 AND 1491926399 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491840000 AND 1491926399 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491840000 AND 1491926399 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491926400 AND 1492012799 LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491926400 AND 1492012799 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491926400 AND 1492012799 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491926400 AND 1492012799 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1491926400 AND 1492012799 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492012800 AND 1492099199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492012800 AND 1492099199 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492012800 AND 1492099199 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492012800 AND 1492099199 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492012800 AND 1492099199 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492099200 AND 1492185599 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492099200 AND 1492185599 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492099200 AND 1492185599 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492099200 AND 1492185599 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492099200 AND 1492185599 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492185600 AND 1492271999 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492185600 AND 1492271999 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492185600 AND 1492271999 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492185600 AND 1492271999 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492185600 AND 1492271999 LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492272000 AND 1492358399 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492272000 AND 1492358399 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492272000 AND 1492358399 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492272000 AND 1492358399 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492272000 AND 1492358399 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492358400 AND 1492444799 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492358400 AND 1492444799 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492358400 AND 1492444799 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492358400 AND 1492444799 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492358400 AND 1492444799 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492444800 AND 1492531199 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492444800 AND 1492531199 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492444800 AND 1492531199 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492444800 AND 1492531199 LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492444800 AND 1492531199 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492531200 AND 1492617599 LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492531200 AND 1492617599 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492531200 AND 1492617599 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492531200 AND 1492617599 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492531200 AND 1492617599 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492617600 AND 1492703999 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492617600 AND 1492703999 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492617600 AND 1492703999 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492617600 AND 1492703999 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492617600 AND 1492703999 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492704000 AND 1492790399 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492704000 AND 1492790399 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492704000 AND 1492790399 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492704000 AND 1492790399 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492704000 AND 1492790399 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492790400 AND 1492876799 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492790400 AND 1492876799 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492790400 AND 1492876799 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492790400 AND 1492876799 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492790400 AND 1492876799 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492876800 AND 1492963199 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492876800 AND 1492963199 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492876800 AND 1492963199 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492876800 AND 1492963199 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492876800 AND 1492963199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492963200 AND 1493049599 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492963200 AND 1493049599 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492963200 AND 1493049599 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492963200 AND 1493049599 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1492963200 AND 1493049599 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493049600 AND 1493135999 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493049600 AND 1493135999 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493049600 AND 1493135999 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493049600 AND 1493135999 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493049600 AND 1493135999 LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493136000 AND 1493222399 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493136000 AND 1493222399 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493136000 AND 1493222399 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493136000 AND 1493222399 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493136000 AND 1493222399 LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493222400 AND 1493308799 LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493222400 AND 1493308799 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493222400 AND 1493308799 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493222400 AND 1493308799 LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493222400 AND 1493308799 LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493308800 AND 1493395199 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493308800 AND 1493395199 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493308800 AND 1493395199 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493308800 AND 1493395199 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493308800 AND 1493395199 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493395200 AND 1493481599 LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493395200 AND 1493481599 LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493395200 AND 1493481599 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493395200 AND 1493481599 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493395200 AND 1493481599 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` IN ('0','1','2','4') AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493481600 AND 1493567999 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 0 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493481600 AND 1493567999 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 1 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493481600 AND 1493567999 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 2 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493481600 AND 1493567999 LIMIT 1   [ RunTime:0.0074s ]
+SQL: SELECT SUM(total_amount) AS tp_sum FROM `order` WHERE `restaurant_id` = 131 AND `order_status` <> 0 AND `pay_type` = 4 AND `order_type` IN ('1','2','3') AND `pay_time` BETWEEN 1493481600 AND 1493567999 LIMIT 1   [ RunTime:0.0076s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+

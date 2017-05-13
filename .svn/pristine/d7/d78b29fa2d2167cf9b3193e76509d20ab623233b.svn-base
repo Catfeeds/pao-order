@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- 引入样式 -->
+		<link rel="stylesheet" href="__PUBLIC__/element-ui/lib/theme-default/index.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/showNumber.css">
+	</head>
+	<body>
+		<div id="writeOff" class="clear">
+			<button v-for="num in orderNum" @click="orderInfo(num.order_id,num.order_sn)" class="order-number">{{num.order_sn}}</button>
+
+			<el-dialog :title="currentNum" v-model="deleteNum"   class="deleteDialog">
+				<table class="dialog-table">
+					<tr v-for="item in currentOrder">
+						<td>{{item.food_name}}</td>
+						<td class="text-center">￥{{item.food_price2}}</td>
+						<td class="text-right">
+							<button class="dialog-btn" v-if="item.status == 1" @click="setOrderFoodStatus(2,item.order_food_id)">取餐</button>
+							<button class="dialog-btn" v-if="item.status == 2" @click="setOrderFoodStatus(3,item.order_food_id)">核销</button>
+							<button class="dialog-btn" v-if="item.status == 3" @click="setOrderFoodStatus(3,item.order_food_id)" disabled>已核销</button>
+						</td>
+					</tr>
+				</table>
+				<div slot="footer" class="dialog-footer">
+					<button class="dialog-btn" @click="setAllFoodStatus(2)">一键取餐</button>
+				    <button class="dialog-btn" @click="setAllFoodStatus(3)">一键核销</button>
+				</div>
+			</el-dialog>
+		</div>
+	</body>
+	<!-- 先引入 Vue -->
+	<script src="__PUBLIC__/js/vue.js"></script>
+	<script src="__PUBLIC__/js/vue-axios.js"></script>
+	<!-- 引入组件库 -->
+	<script src="__PUBLIC__/element-ui/lib/index.js"></script>
+	<script src="__PUBLIC__/js/jquery-3.1.0.min.js"></script>
+	<script src="__PUBLIC__/js/prevent.js"></script>
+	<script>
+		var district_id = "{$Think.session.district_id}";
+		var device_code = "{$Think.session.device_code}";
+		Vue.prototype.$http = axios;
+		new Vue({
+			data:{
+				orderNum:"",
+				currentNum:'',
+				currentOrder:"",
+				deleteNum:false
+			},
+			mounted:function(){
+				var _self = this;
+				var form = new FormData();
+				form.append('district_id',district_id);
+				form.append('device_code',device_code);
+				this.$http.post("/index.php/api/showNumber/getAllOrderInDistrict",form)
+						.then(
+						function(returnData){
+							_self.orderNum = returnData.data.data;
+						}
+				);
+			},
+			methods:{
+				orderInfo:function(order_id,order_sn){
+					var _self = this;
+					_self.currentNum = order_sn;
+					var form = new FormData();
+					form.append('order_id',order_id);
+					form.append('district_id',district_id);
+					form.append('device_code',device_code);
+					this.$http.post("/index.php/api/showNumber/getOrderFoodsByOne",form)
+							.then(
+							function(returnData){
+								console.log(returnData.data.data);
+								_self.currentOrder = returnData.data.data;
+								_self.deleteNum = true;
+							}
+					);
+				},
+				setOrderFoodStatus:function(status,order_food_id){
+					var _self = this;
+					var form = new FormData();
+					form.append('order_food_id',order_food_id);
+					form.append('status',status);
+					form.append('device_code',device_code);
+					this.$http.post("/index.php/api/showNumber/setOrderFoodStatus",form)
+							.then(
+							function(returnData){
+								console.log(returnData.data.code);
+								if(returnData.data.code == 1){
+									_self.deleteNum = false;
+									location.href = "";
+								}else{
+									_self.deleteNum = false;
+									if(_self.deleteNum == false){
+										alert("操作错误");
+									}
+								}
+							}
+					);
+				},
+				setAllFoodStatus:function(status){
+					var _self = this;
+					var order_food_ids = [];
+					for(item in _self.currentOrder){
+						order_food_ids.push(_self.currentOrder[item].order_food_id);
+					}
+					console.log(order_food_ids);
+					var form = new FormData();
+					form.append('order_food_ids',order_food_ids);
+					form.append('status',status);
+					form.append('device_code',device_code);
+					this.$http.post("/index.php/api/showNumber/setAllOrderFoodStatus",form)
+							.then(
+							function(returnData){
+								console.log(returnData.data.code);
+								if(returnData.data.code == 1){
+									_self.deleteNum = false;
+									location.href = "";
+								}else{
+									_self.deleteNum = false;
+									if(_self.deleteNum == false){
+										alert("操作错误");
+									}
+								}
+							}
+					);
+				}
+			}
+		}).$mount('#writeOff');
+	</script>
+</html>

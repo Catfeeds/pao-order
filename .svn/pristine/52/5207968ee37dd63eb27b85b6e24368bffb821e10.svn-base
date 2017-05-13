@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <foreach name="discount_rules" item="v">
+        <div class="pull-left point-exchange-item">
+        <div class="pic-thumbnail">
+            <img src="/Public/Uploads/Goods/{$v[goods_img]}">
+            <input type="hidden" name="id" value="{$v['id']}"/>
+            <input type="hidden" name="goods_name" value="{$v['goods_name']}"/>
+            <input type="hidden" name="score" value="{$v['score']}"/>
+            <input type="hidden" name="money" value="{$v['money']}"/>
+            <input type="hidden" name="goods_desc" value="{$v['goods_desc']}"/>
+        </div>
+        <p>积分：{$v[score]}</p>
+        </div>
+    </foreach>
+</body>
+</html>

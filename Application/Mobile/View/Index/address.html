@@ -1,0 +1,59 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">
+		<button onclick="javascript:history.back(-1);" class="return-btn">
+			<span class="glyphicon glyphicon-hand-left"></span>
+		</button>
+		<span>收货地址</span>
+	</header>
+	
+	<div class="address-list">
+		<volist name = "info" id = 'v'>
+		<div class="address-list-item">
+			<div  class="address-set">
+				<button onclick="location='/index.php/Mobile/Index/address_edit/typeid/1/addr_id/{$v.id}'">
+					<span class="glyphicon glyphicon-edit"></span>
+				</button>
+				<button onclick="deladdress({$v.id})">
+					<span class="glyphicon glyphicon-remove-circle"></span>
+				</button>
+			</div>
+			<span class="glyphicon glyphicon-user"></span>
+			<span>收件人:{$v.name}</span>
+			<br>
+			<span class="glyphicon glyphicon-phone"></span>
+			<span>手机号:{$v.phone}</span>
+			<br>
+			<span class="glyphicon glyphicon-map-marker"></span>
+			<span>收货地址:{$v.address}</span>
+		</div>
+		</volist>
+	</div>
+
+	<div class="container-fluid mt-30">
+		<button class="check-btn form-control" onclick="location='/index.php/Mobile/Index/address_edit/typeid/0/addr_id/0'">新增地址</button>
+	</div>
+
+	<footer class="home-footer"></footer>
+</body>
+<script>
+	function deladdress(i){
+		//alert(i);
+		var msg = confirm("确定要删除此地址吗？");
+		if(msg == true){
+			$.ajax({
+				type:"get",
+				url:"/index.php/Mobile/Index/deladdress/addrid/"+i+"",
+				async:true,
+				dataType:"json",
+				success:function(data){
+					alert(data.msg);
+					if(data.data == 1){
+						location.reload();
+					}
+				}
+			});
+		}
+	}
+</script>
+</html>

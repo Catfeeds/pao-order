@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="member-tab-item2 form-inline" id="delCash">
+        积分：
+        <input class="form-control" type="text" name="account" value="{$point_cash_rules[account]}" id="man" disabled>分=现金：
+        <input class="form-control" type="text" name="benefit" value="{$score}" id="zhe" disabled>元
+
+        <input type="hidden" name="id" value="{$point_cash_rules[id]}"/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,477 @@
+[ 2017-05-09T20:51:52+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: login_account E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.034371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.034436s ]
+
+[ 2017-05-09T20:51:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002919s ]
+
+[ 2017-05-09T20:52:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001605s ]
+
+[ 2017-05-09T20:52:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg/0.8215318408652821
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2017-05-09T20:52:53+08:00 ] 127.0.0.1 /index.php/admin/index/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.1141s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE `login_account` = '123456' LIMIT 1   [ RunTime:0.0027s ]
+
+[ 2017-05-09T20:52:55+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0721s ]
+SQL: SELECT `logo` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `qrc_code` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `qrc_code` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qrc_device` [ RunTime:0.0592s ]
+SQL: SELECT * FROM `qrc_device` WHERE `qrc_code_id` = 63 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-09T20:52:56+08:00 ] 127.0.0.1 /index.php/Admin/restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0054s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2017-05-09T20:53:11+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0092s ]
+SQL: SELECT `logo` FROM `restaurant` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qrc_code` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `qrc_code` WHERE `restaurant_id` = 131 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qrc_device` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `qrc_device` WHERE `qrc_code_id` = 63 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2017-05-09T20:53:13+08:00 ] 127.0.0.1 /index.php/Admin/restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0112s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 103 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0138s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 131 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=131 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2017-05-09T20:53:17+08:00 ] 127.0.0.1 /index.php/admin/Index/loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-05-09T20:53:17+08:00 ] 127.0.0.1 /index.php/admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: login_account E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-05-09T20:53:17+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2017-05-09T20:53:28+08:00 ] 127.0.0.1 /index.php/admin/index/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE `login_account` = 'admin' LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2017-05-09T20:53:30+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0115s ]
+SQL: SELECT `logo` FROM `restaurant` WHERE `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qrc_code` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `qrc_code` WHERE `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2017-05-09T20:53:31+08:00 ] 127.0.0.1 /index.php/Admin/restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0099s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 198 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 226 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=226 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-05-09T20:53:39+08:00 ] 127.0.0.1 /index.php/Admin/Restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0115s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 198 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0126s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 226 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=226 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2017-05-09T20:58:14+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-05-09T20:58:15+08:00 ] 127.0.0.1 /index.php/admin/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-05-09T20:58:21+08:00 ] 127.0.0.1 /index.php/admin/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-05-09T20:58:36+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-05-09T20:58:36+08:00 ] 127.0.0.1 /index.php/admin/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-05-09T20:58:46+08:00 ] 127.0.0.1 /index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: login_account E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 23 行.
+NOTIC: [8] Undefined variable: password E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 24 行.
+NOTIC: [8] Undefined variable: autoFlag E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2017-05-09T20:58:52+08:00 ] 127.0.0.1 /index.php/Admin/Index/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2017-05-09T20:59:08+08:00 ] 127.0.0.1 /index.php/admin/index/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.8824s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE `login_account` = 'root' LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2017-05-09T20:59:09+08:00 ] 127.0.0.1 /index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0110s ]
+SQL: SELECT `logo` FROM `restaurant` WHERE `restaurant_id` = 78 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qrc_code` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `qrc_code` WHERE `restaurant_id` = 78 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001641s ]
+
+[ 2017-05-09T20:59:17+08:00 ] 127.0.0.1 /index.php/Admin/restaurant/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0119s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0107s ]
+SQL: SELECT `restaurant_id`,`restaurant_name`,`telephone1`,`telephone2`,`address`,`logo` FROM `restaurant` WHERE ( restaurant_id = 78 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `restaurant_manager` WHERE ( restaurant_id=78 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 96 行.
+NOTIC: [8] Undefined index: restaurant_url E:\wamp\www\yunniu\Application\Runtime\Cache\Admin\6ee8e8a26be5e1619fce66a0ca4afe29.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+
+[ 2017-05-09T21:06:27+08:00 ] 127.0.0.1 /index.php/Admin/Moudle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002869s ]
+SQL: SHOW COLUMNS FROM `restaurant_manager` [ RunTime:0.0036s ]
+SQL: SELECT `restaurant_id` FROM `restaurant_manager` WHERE ( id = 198 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `advertisement` [ RunTime:1.6819s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 226 AND `advertisement_type` = 0  [ RunTime:1.8559s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 226 AND `advertisement_type` = 1  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `advertisement` WHERE `restaurant_id` = 226 AND `advertisement_type` = 2  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `restaurant_process` [ RunTime:1.3941s ]
+SQL: SELECT * FROM `restaurant_process` WHERE `restaurant_id` = 226  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `process` [ RunTime:3.5994s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 4 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `process` WHERE `process_id` = 5 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0128s ]
+SQL: SELECT `advertise_time` FROM `restaurant` WHERE `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `adv_language` FROM `restaurant` WHERE `restaurant_id` = 226 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:4.177437s ]
+INFO: [ view_parse ] --END-- [ RunTime:4.177723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.706251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.706470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:1.010145s ]
+INFO: [ app_end ] --END-- [ RunTime:1.010337s ]
+

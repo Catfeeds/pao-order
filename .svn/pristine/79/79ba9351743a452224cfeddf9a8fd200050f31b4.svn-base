@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- 引入样式 -->
+		<link rel="stylesheet" href="__PUBLIC__/element-ui/lib/theme-default/index.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/showNumber.css">
+	</head>
+	<body>
+		<div id="showNumber" class="clear">
+				<div class="coming">
+					<div class="coming-header">准备中coming</div>
+					<div class="coming-content" v-if="showComing">
+						<el-carousel :interval="show_time" arrow="never" indicator-position="none" :autoplay="true">
+							<el-carousel-item v-for="page in comingNum">
+					  			<el-row>
+					  			  <el-col  v-for="num in page" :span="12">{{num}}</el-col>
+					  			</el-row>
+						  	</el-carousel-item>
+						</el-carousel>
+					</div>
+				</div>
+				<div class="take">
+					<div class="take-header">请以下号码到取餐区取餐</div>				
+					<div class="take-content">
+						<div class="take-content-item" v-if="showFinish"  v-for="district in district_list">
+							<div class="take-title">
+								<div class="title-letter">{{district.district_name}}</div>
+								<div class="title-right">
+									<span class="title-chinese">取餐区</span>
+									<span class="title-english">Take meals</span>
+								</div>
+							</div>
+							<div class="take-carousel">
+								<el-carousel :interval="show_time" arrow="never" indicator-position="none" :autoplay="true">
+								<el-carousel-item v-for="page in district.finishNum">
+						  			  <div v-for="Num in page">{{Num}}</div>
+							  	</el-carousel-item>
+							</el-carousel>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</body>
+	<!-- 先引入 Vue -->
+	<script src="__PUBLIC__/js/vue.js"></script>
+	<script src="__PUBLIC__/js/vue-axios.js"></script>
+	<!-- 引入组件库 -->
+	<script src="__PUBLIC__/element-ui/lib/index.js"></script>
+	<script src="__PUBLIC__/js/jquery-3.1.0.min.js"></script>
+	<script src="__PUBLIC__/js/prevent.js"></script>
+	<script>
+		Vue.prototype.$http = axios;
+		new Vue({
+			data:{	
+				show_time:3000,
+				showComing:false,
+				showFinish:false,
+				comingNum:"",
+				district_list:""
+			},
+			mounted:function(){
+				var _self = this;
+				var form = new FormData();
+				form.append("device_code","1C:CA:E3:34:B2:17");
+
+				//获取coming的订单号
+				this.$http.post("/index.php/api/showNumber/getComingOrderNum",form)
+						.then(function(returnData){
+							console.log(returnData.data.data);
+							_self.comingNum = returnData.data.data;
+							_self.showComing=true;
+						});
+
+				//获取个分区finish的订单号
+				this.$http.post("/index.php/api/showNumber/getAllFinishOrderNum",form)
+						.then(function(returnData){
+							console.log(returnData.data.data);
+							_self.district_list = returnData.data.data;
+							_self.showFinish=true;
+						});
+			},
+		}).$mount('#showNumber');
+</script>
+</html>

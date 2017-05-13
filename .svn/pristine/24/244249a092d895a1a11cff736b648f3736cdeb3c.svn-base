@@ -1,0 +1,24 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">
+		<a href="javascript:history.back(-1)">
+			<img src="__PUBLIC__/images/lt.png">
+			<span>重新点餐</span>
+		</a>
+	</header>
+	<div class="container-fluid select">
+		<h1 class="text-center green">
+			<b>请选择</b>
+		</h1>
+		<div class="row">
+			<div class="col-xs-6 forHere">
+				<a href="__CONTROLLER__/processRoute/process/select/order_type/1"><img src="__PUBLIC__/images/restaurant.png"></a>
+			</div>
+			<div class="col-xs-6 goTo">
+				<a href="__CONTROLLER__/processRoute/process/select/order_type/2"><img src="__PUBLIC__/images/take_out.png"></a>
+			</div>
+		</div>
+	</div>
+	<footer class="home-footer"></footer>
+</body>
+</html>

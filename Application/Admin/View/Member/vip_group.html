@@ -1,0 +1,26 @@
+<include file="Public/head"/>
+<body>
+<div class="container-fluid">
+    <form class="form-inline">
+        <div>
+            默认会员组
+            <input type="text" name="account" value="默认会员组" disabled class="form-control">
+        </div>
+        <div id="group">
+            <foreach name="group_info" item="v">
+                <div class="member-tab-item" id="delGroup">
+                    <span class="index">{++$key}</span>会员组
+                    <input type="text" name="group_name1" value="{$v[group_name]}" disabled id="gm" class="form-control">
+                    <input type="hidden" name="group_id" value="{$v[group_id]}" id='hid'/>
+                </div>
+            </foreach>
+        </div>
+    </form>
+</div>
+
+
+<script src="__PUBLIC__/js/vip.js,__PUBLIC__/js/layer.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+<div class="modal-content">
+    <div class="food-content" id="{$info3.food_id}">
+        <div class="img-box">
+            <img src="/{$info3.food_img}">
+        </div>
+        <div class="modal-detail">
+            <div class="modal-detail-left text-left">
+                <div class="modal-food-name" id="foodname">{$info3.food_name}</div>
+                <div class="red modal-price" value="{$food_price}">
+                    <span>&yen;</span>
+                    <span id="food_price" data-food_price="{$food_price}">{$food_price}</span>
+                </div>
+            </div>
+            <div class="modal-detail-right text-right">
+                <div class="modal-price-content">
+                    <button class="btn-none" onclick="decreaseNum(this)" data-food_id="{$info3.food_id}" data-food_price="{$food_price}">
+                        <img src="__PUBLIC__/images/minus_btn.png">
+                    </button>
+                    <span class="modal-num" id = "food_num">1</span>
+                    <button class="btn-none" onclick="increaseNum(this)" data-food_id="{$info3.food_id}" data-food_price="{$food_price}">
+                        <img src="__PUBLIC__/images/plus_mobile.png">
+                    </button>
+                </div>
+            </div>          
+        </div>
+        <p class="food-intro">
+            {$info3.food_desc}
+        </p>
+        <div class="food-attr">
+            <form action="javascript:void(0)" id="attr_form">
+                <volist name="at_list" id="at_vo">
+                    <if condition="$at_vo['select_type'] eq 0">
+                        <ul class="attr-list clearfix" id="first">
+                            <li class="attr-item-name">{$at_vo.type_name}</li>
+                            <volist name = "at_vo['attrs']" id = "ats_vo" key="k">
+                                <li class="attr-select-item {$ats_vo.length_type}" onclick="changePrice()">
+                                    <input type="radio" name = "radio{$ats_vo.food_attribute_id}"  value="{$ats_vo.attribute_price}" data-fd_at_id="{$ats_vo.food_attribute_id}" data-key = "{$k}"/>            
+                                    <div class="attr-name">
+                                        <span>{$ats_vo.attribute_name}</span>
+                                    </div>
+                                    <div>+{$ats_vo.attribute_price}元</div>
+                                </li>
+                            </volist>
+                        </ul>
+                    <else/>            
+                        <ul class="attr-list clearfix" id="third">
+                            <li class="attr-item-name">{$at_vo.type_name}</li>
+                            <volist name = "at_vo['attrs']" id = "ats_vo">
+                                <li class="attr-select-item {$ats_vo.length_type}" onclick="changePrice()">
+                                    <input type="checkbox" name = "checkbox{$ats_vo.food_attribute_id}"  value="{$ats_vo.attribute_price}" data-fd_at_id="{$ats_vo.food_attribute_id}"/>            
+                                    <div class="attr-name">{$ats_vo.attribute_name}</div>
+                                    <div>+{$ats_vo.attribute_price}元</div>
+                                </li>
+                            </volist>
+                        </ul>
+                    </if>
+                </volist>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal-bottom">
+        <button type="button" data-dismiss="modal" class="btn-close"><span>&lt;&nbsp;</span>关闭</button>
+        <button type="button" id="food-checked" data-single_price="{$food_price}" data-attrs="" data-food_name="{$info3.food_name}" data-food_id="{$info3.food_id}" onclick="addOrderItem(this)">确认</button>
+    </div>
+</div>
+
+<script src="__PUBLIC__/js/Mobile/orderPopup_mobile.js"></script>
+
+

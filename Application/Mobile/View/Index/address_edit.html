@@ -1,0 +1,180 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">
+		<button onclick="javascript:history.back(-1);" class="return-btn">
+			<span class="glyphicon glyphicon-hand-left"></span>
+		</button>
+		<span id="actionname">编辑地址</span>
+	</header>
+	
+	<div class="container-fluid address-edit">
+		<table class="pre100">
+			<tr>
+				<td>姓名：</td>
+				<td><input type="text" name="username" class="form-control"></td>
+			</tr>
+			<tr>
+				<td>手机号码：</td>
+				<td><input type="text" name="phone" class="form-control"></td>
+			</tr>
+			<tr>
+				<td>收货地址：</td>
+				<td id="city">
+					<select class="form-control" id="city1" onchange="changecity1(this)">
+						<option value="0">-请选择-</option>
+					<volist name="info" id="v">	
+						<option value="{$v.id}">{$v.name}</option>
+					</volist>
+					</select>
+					<select class="form-control" id="city2" onchange="changecity2(this)">
+						<option value="0">-请选择-</option>
+					</select>
+					<select class="form-control" id="city3">
+						<option value="0">-请选择-</option>
+					</select>
+					<input type="text" name="address" class="form-control">
+				</td>
+			</tr>
+		</table>
+		<button class="check-btn form-control mt-10" type="button" id="save">保存</button>
+	</div>
+	
+
+	<footer class="home-footer"></footer>
+</body>
+<script>
+
+
+
+	$(function(){
+		var typeid = {$Think.get.typeid};
+		var	addrid = {$Think.get.addr_id};	
+		if(typeid == 0){
+			$('#actionname').text('新增地址');
+		}else{
+			$.ajax({
+				type:"post",
+				url:"/index.php/Mobile/Index/modifyaddr",
+				data:{"addrid":addrid},
+				dataType:"json",
+				success:function(data){
+					$("input[name='username']").attr("value",data.addressee);
+					$("input[name='phone']").attr('value',data.addnumber);
+					$("#city1").val(data.city1);		
+					changecity1(); 	
+					$("#city2").val(data.city2);
+					changecity2(); 	
+					$("#city3").val(data.city3);
+					$("input[name='address']").attr("value",data.address);
+				}
+			});
+		}
+		 $("#city1").val(0);
+	});
+	
+	function changecity1(){	
+		var parent_id = $('#city1 option:selected').val();
+		if(parent_id != 0){
+			$.ajax({
+				type:"get",
+				url:"/index.php/Mobile/Index/selectaddress",
+				data:{"parent_id":parent_id},
+				async:false,
+				success:function(data){
+					//console.log(data);
+					var value = data;
+					var mm = '<option value = "0">-请选择-</option>';
+					for(var i in value){
+						mm += '<option value = '+data[i].id+'>'+data[i].name+'</option>';
+					}
+					$('#city2').html("");
+					$('#city2').html(mm);
+					$('#city3').html('<option value = "0">-请选择-</option>');
+					console.log(mm);
+				}
+			});
+		}else{
+			$('#city2').html('<option value = "0">-请选择-</option>');
+			$('#city3').html('<option value = "0">-请选择-</option>');
+		}
+	};
+	
+	function changecity2(){
+		//alert($(this).children('option:selected').val());
+		var parent_id = $('#city2 option:selected').val();
+		if(parent_id != 0){
+			$.ajax({
+				type:"get",
+				url:"/index.php/Mobile/Index/selectaddress",
+				data:{"parent_id":parent_id},
+				async:false,
+				success:function(data){
+					console.log(data);
+					var value = data;
+					var mm = '<option value = "0">-请选择-</option>';
+					for(var i in value){
+						mm += '<option value = '+data[i].id+'>'+data[i].name+'</option>';
+					}
+					$('#city3').html(mm);
+				}
+			});
+		}else{
+			$('#city3').html('<option value = "0">-请选择-</option>');
+		}
+	};
+	
+	$('#save').click(function(){
+		var typeid = {$Think.get.typeid};
+		var	addrid = {$Think.get.addr_id};	
+		var username = $("input[name='username']").val();
+		var phone = $("input[name='phone']").val();
+		var address = $("input[name='address']").val();
+		var city1 = $("#city1 option:selected").val();
+		var city2 = $("#city2 option:selected").val();
+		var city3 = $("#city3 option:selected").val();
+		if(username && phone && address != ""){
+			if(city1 && city2 && city3 != 0){
+				if((/^1[34578]\d{9}$/.test(phone))){
+					if(typeid == 0){
+						$.ajax({
+							type:"post",
+							url:"/index.php/Mobile/Index/addAddress",
+							data:{"username":username,"phone":phone,"address":address,"city":city1,"city2":city2,"city3":city3},
+							dataType:"json",
+							success:function(data){
+								alert(data.msg);
+								if(data.data == 1){
+									location.href = "/index.php/Mobile/Index/address";
+								}
+							}
+						});
+					}else{
+						$.ajax({
+							type:"post",
+							url:"/index.php/Mobile/Index/updateaddr",
+							data:{"username":username,"phone":phone,"address":address,"city":city1,"city2":city2,"city3":city3,"id":addrid},
+							dataType:"json",
+							success:function(data){
+								alert(data.msg);
+								if(data.data == 1){
+									location.href = "/index.php/Mobile/Index/address";
+								}
+							}
+						});
+					}
+				}else{
+					alert("手机号格式不正确！");
+				}
+			}else{
+				alert("省、市、区地址格式错误！");
+			}
+		}else{
+			alert("用户名，手机号，或详细地址不能为空！");
+		}
+	});
+	
+	
+	
+	
+</script>
+</html>

@@ -1,0 +1,82 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/3/16
+ * Time: 16:08
+ */
+
+namespace ShowNumber\Controller;
+use ShowNumber\Service;
+use Think\Controller;
+
+class ActivateController extends Controller
+{
+    public function equipmentActivate(){
+        $register_code = I("register_code");
+        $device_code = I("device_code");
+        $device_name = I("device_name");
+        $type = I("type");
+        $activateService = new Service\ActivateService();
+        $activateService->activate($register_code,$device_code,$device_name,$type);
+    }
+
+    public function activateQrc(){
+        $type = I("type");
+        $device_code = I("device_code");
+        $this->assign("type",$type);
+        $this->assign("device_code",$device_code);
+        $this->display();
+    }
+
+    /**
+     * 提交机器类型和机器码，获取对应的激活链接的二维码
+     */
+    public function showNumQrc(){
+        $type = I("type");
+        $device_code = I("device_code");
+        $qrInfo = "http://".$_SERVER["HTTP_HOST"]."/index.php/ShowNumber/Activate/activateLink/device_code/".$device_code."/type/".$type;
+        //生成二维码图片并直接输出
+        Vendor('phpqrcode.phpqrcode');
+
+        $errorCorrectionLevel =intval(3) ;//容错级别
+        $matrixPointSize = intval(14);//生成图片大小
+
+        $object = new \QRcode();
+        ob_clean();
+        $object->png($qrInfo,false, $errorCorrectionLevel, $matrixPointSize, 2);
+    }
+
+    /**
+     * 激活链接页面
+     * 填写注册码激活
+     */
+    public function activateLink(){
+        $device_code = I("device_code");
+        $type = I("type");
+        $this->assign("device_code",$device_code);
+        $this->assign("type",$type);
+        $this->display();
+    }
+
+    /**
+     * 查询设备是否激活
+     *
+     */
+    public function equipmentStatus(){
+        $type = I("type");
+        $device_code = I("device_code");
+        $equipment_model = D('equipment');
+        $where['type'] = $type;
+        $where['device_code'] = $device_code;
+        $rel = $equipment_model->where($where)->find();
+        if($rel){
+            $returnData['code'] = 1;
+            $returnData['msg'] = "操作成功";
+        }else{
+            $returnData['code'] = 0;
+            $returnData['msg'] = "操作失败";
+        }
+        exit(json_encode($returnData));
+    }
+}

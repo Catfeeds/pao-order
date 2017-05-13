@@ -1,0 +1,16 @@
+[ 2017-03-21T15:02:48+08:00 ] 127.0.0.1 /showNumber/showNum/showNumber/device_code/98795154515441
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `equipment` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `equipment` WHERE `equipment_code` = '98795154515441' LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `equipment` WHERE `equipment_code` = null LIMIT 1   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `config` WHERE `restaurant_id` = null AND `config_type` = 'functionality' AND `config_name` = 'show_num' LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017515s ]
+

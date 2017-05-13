@@ -1,0 +1,225 @@
+<include file="Public/head"/>
+<!-- 点餐页 -->
+<body>
+	<header class="home-header">
+		<a href="javascript:history.back(-1)">
+			<img src="__PUBLIC__/images/lt.png">
+			<b>重新点餐</b>
+		</a>
+	</header>
+
+	<div class="order">
+		<!-- 左边分类 start -->
+		<div class="order-left">
+			<ul class="sorts-list">
+				<volist name = "info" id="v">
+					<li>
+						<a href="javascript:void(0)"  id="category_type" onclick="showtypefood({$v.food_category_id})">
+							<img src="/{$v.image}">
+							<span>{$v.food_category_name}</span>
+						</a>
+					</li>
+				</volist>
+			</ul>
+		</div> <!-- 左边分类 end -->
+
+		<!-- 中间菜品列表 start -->
+		<div class="order-content container-fluid">
+			<div class="tab-content" id="food_info">
+				<div class="tab-pane row fade in active" id="recommend">
+					<volist name = "info1" id = "v1">
+						<div class="col-xs-6 col-sm-4 col-lg-3">
+							<div class="food-list">
+								<a href="javascript:void(0)"  data-toggle="modal" data-target="#foodModal" onclick="findfoodinfo({$v1.food_id})">
+									<img src="/{$v1.food_img}">
+								</a>
+								<div class="food-details">
+									<div class="star">
+										  <if condition = "$v1.star_level eq 1"><span></span></if>
+										  <if condition = "$v1.star_level eq 2"><span>★★</span></if>
+										  <if condition = "$v1.star_level eq 3"><span>★★★</span></if>
+									      <if condition = "$v1.star_level eq 4"><span>★★★★</span></if>
+									      <if condition = "$v1.star_level eq 5"><span>★★★★★</span></if>
+									</div>
+									<div class="food-price">
+										&yen;{$v1.food_price}
+									</div>
+								</div>
+								<a href="#" data-toggle="modal" data-target="#foodModal" class="food-name">{$v1.food_name}</a>
+							</div>
+						</div>
+					</volist>
+				</div>
+				
+			</div>
+		</div><!-- 菜品列表 end -->
+	</div>
+
+	<footer class="home-footer">
+		<button class="cart" data-toggle="modal" data-target="#cartModal" >
+			<span class="glyphicon glyphicon-shopping-cart"></span>
+			<div class="cart-num" id="numv">0</div>
+		</button>
+		<b>&yen;<span id="Total">0.00</span></b>
+		<button type="button" class="btn-none common-btn" id="check-pay" onclick="PlaceOrder()">选好了</button>
+	</footer>
+
+	<!-- Modal -->	
+	<div class="modal fade" id="foodModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" id="modelfood">
+
+		</div>
+	</div>
+
+	<!-- Modal -->	
+	<div class="modal fade" id="cartModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="btn-none" onclick="clearorder()">
+						<span class="glyphicon glyphicon-trash"></span>
+						<span>清空</span>
+					</button>
+					<span>购物车</span>
+				</div>
+				<div class="modal-body">
+					<ul id="foodlist">
+						<li class="cart-item">
+							<div class="cart-left">牛肉面牛肉面牛肉面牛肉面牛肉面牛肉面</div>
+							<div class="cart-right">
+								<button class="btn-none">
+									<img src="__PUBLIC__/images/minus_btn.png">
+								</button>
+								<span>1</span>
+								<button class="btn-none">
+									<img src="__PUBLIC__/images/plus_btn.png">
+								</button>
+								<span class="red">&yen;12.00元</span>
+								<b></b>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	$(function(){
+			var pagenum = $("table_num").val();
+			if(!pagenum){
+				pagenum = 000;
+			}
+			$('#Tables').html(pagenum);
+		})
+	function showtypefood(i){
+		//alert(i);
+		$.ajax({
+			type:"get",
+			url:"/index.php/Mobile/Index/showtypefood/type/"+i+"",
+			//dataType:"json",
+			success:function(data){
+				$("#food_info").html(data);
+				$('.food-list img').height(function(){
+				return $(this).parents('.food-list').width()*0.64;
+				});
+			}
+		});
+	}
+	
+	function findfoodinfo(i){
+		$.ajax({
+			type:"get",
+			url:"/index.php/Mobile/Index/findfoodinfo/food_id/"+i+"",
+			success:function(data){
+				$("#modelfood").html(data);//加载模态框
+			}
+		});
+	}
+	
+	function PlaceOrder(){
+		var total = parseInt($("#Total").html());
+		//alert(total);
+		if(total == 0){
+			alert("下单失败");
+		}else{
+		var r=confirm("确定要下单吗？");
+ 		 if (r==true){
+			var divhtml2 = $('#foodlist').children();		
+			var list = {};
+			//var Tables = $("#Tables").html();
+			$.each(divhtml2, function(index,domEle){				//index代表数组下标，domEle代表当前下标所对应的值
+							var list1 = {};//js对像
+							var food_id = $(this).attr('value');//获取右侧动态记录列表里的food_id
+							var food_num = parseInt($(this).find('span').eq(0).html());
+							var food_attr1 = $(this).find('b').eq(1).attr('value');
+							var food_attr2 = $(this).find('b').eq(2).attr('value');
+							var food_attr3 = $(this).find('b').eq(3).attr('value');
+							console.log(food_attr3);
+							
+				
+								var strstring = "";
+								var strs= new Array(); //定义一数组 
+								strs=food_attr3.split(","); //字符分割 
+								for (i=0;i<strs.length ;i++ ){ 
+								strstring += strs[i]+"|";
+								}
+							
+
+							var food_attr = food_attr1+"|"+food_attr2+"|"+strstring;
+							list1['food_id'] = food_id;
+							list1['food_num'] = food_num;
+							list1['food_attr'] = food_attr;
+							list1['order_type'] = {$Think.get.order_type};
+							list[index] = list1;
+					});
+						console.log(list);
+						$.ajax({
+							type:"post",
+							url:"/index.php/Mobile/Index/PlaceOrder",
+							data:list,
+							dataType:"json",
+							success:function(data){
+								if(data.code == 1){
+									var order_sn = data.data['order_sn'];
+									var Total = $("#Total").html();
+									window.location.href = "/index.php/Mobile/index/processRoute/process/order/price/"+Total+"/order_sn/"+order_sn;
+								}
+							},
+							error:function(){
+								alert("there is a error!");
+							}
+						});
+		}
+		
+			}	
+					
+	};
+	
+	//清空购物车
+	function clearorder(){
+		$('#foodlist').empty();
+		$('#Total').html("0.00");
+		$('#numv').html("0");
+	}
+	
+/*	$(function(){		
+		if({$tpl['tplcolor2_id']}==0){
+			$('#global-css').attr('href','__PUBLIC__/css/color_red.css');
+		}else if({$tpl['tplcolor2_id']}==1){
+			$('#global-css').attr('href','__PUBLIC__/css/color_blue.css');
+		}else if({$tpl['tplcolor2_id']}==2){
+			$('#global-css').attr('href','__PUBLIC__/css/color_green.css');
+		}else if({$tpl['tplcolor2_id']}==3){
+			$('#global-css').attr('href','__PUBLIC__/css/color_yellow.css');
+		}else if({$tpl['tplcolor2_id']}==4){
+			$('#global-css').attr('href','__PUBLIC__/css/color_black.css');
+		}else{
+			$('#global-css').attr('href','__PUBLIC__/css/color_orange.css');
+		}
+		
+	})*/
+	
+</script>
+</html>

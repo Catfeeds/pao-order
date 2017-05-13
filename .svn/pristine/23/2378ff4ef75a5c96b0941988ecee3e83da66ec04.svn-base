@@ -1,0 +1,66 @@
+<?php
+namespace Mobile\Controller;
+use Think\Controller;
+class WeixinController extends Controller {
+        #　会员同意授权，如果用户同意授权，页面将跳转至 redirect_uri/?code=CODE&state=STATE。
+    public function getUserDetail(){
+        // 获取到微信公众号设置链接处传递过来的代理ID
+        $business_id = I("get.business_id");
+        // 存到session中
+        session("business_id",$business_id);
+
+        // 查询出数据库中的当前代理的对应的appid
+        $public_number_set = D("public_number_set");
+        $public_info = $public_number_set->where(array("business_id"=>$business_id))->find();
+        $appid = $public_info['appid'];
+        $AppSecret = $public_info['appsecret'];
+
+
+        // 1、获取到code
+        // $appid = "wxa9be3598671d1982";  // 云牛appid
+        // $redirect_uri = urlencode("http://shop.founya.com/index.php/Mobile/member/receiver_weixin");    // 获取到授权后要跳转到的地址
+        $redirect_uri = urlencode("http://shop.founya.com/index.php/Mobile/member/receiver_weixin?appid=".$appid."&AppSecret=".$AppSecret);    // 获取到授权后要跳转到的地址
+        $url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=".$appid."&redirect_uri=".$redirect_uri."&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
+        // $url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=".$appid."&redirect_uri=".$redirect_uri."&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect&appid=".$appid."&AppSecret=".$AppSecret;
+        header("location:".$url);
+    }
+
+    /*public function demo()
+    {
+        include VENDOR_PATH .'phpqrcode/phpqrcode.php';
+        \QRcode::png('http://shop.founya.com/index.php/Mobile/weixin/getUserDetail');
+    }
+
+    public function test()
+    {
+        include VENDOR_PATH .'phpqrcode/phpqrcode.php';
+        //二维码内容
+        $value = 'http://baidu.com';
+
+        //容错级别
+        $errorCorrenctionLevel = 'Q';
+        //二维码图片大小
+        $matrixPointSize = 10;
+        //生成二维码
+        \Qrcode::png($value,'qrcode.png',$errorCorrenctionLevel,$matrixPointSize,2);
+        //图片logo加入二维码
+        $logo = '/Public/Uploads/Goods/2017-01-11/587588b053860.jpg';
+        $qrcode = 'qrcode.png';
+        $logo = imagecreatefromstring(file_get_contents($logo));
+        $qrcode = imagecreatefromstring(file_get_contents($qrcode));
+        $QR_width = imagesx($qrcode);//二维码图片宽度
+        $QR_height = imagesy($qrcode);//二维码图片高度
+        $logo_width = imagesx($logo);//logo图片宽度
+        $logo_height = imagesy($logo);//logo图片高度
+        $logo_qr_width = $QR_width / 5;
+        $scale = $logo_width/$logo_qr_width;
+        $logo_qr_height = $logo_height/$scale;
+        $from_width = ($QR_width - $logo_qr_width) / 2;
+        //重新组合图片并调整大小
+        imagecopyresampled($qrcode, $logo, $from_width, $from_width, 0, 0, $logo_qr_width,$logo_qr_height, $logo_width, $logo_height);
+        //保存生成的二维码
+        imagepng($qrcode, 'helloweixin.png');
+        echo '<img src="/helloweixin.png">';
+    }*/
+
+}

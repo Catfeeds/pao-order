@@ -1,0 +1,60 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">
+		<button onclick="javascript:history.back(-1);" class="return-btn">
+			<span class="glyphicon glyphicon-hand-left"></span>
+		</button>
+		<span>用户登录</span>
+	</header>
+	
+	<div class="container-fluid login">
+		<div class="login-form">
+			<input type="text" name="phone" placeholder="请输入手机号" class="form-control">
+			<span class="glyphicon glyphicon-user input-icon"></span>
+		</div>
+		<div class="login-form">
+			<span class="glyphicon glyphicon-lock input-icon"></span>
+			<input type="password" name="password" placeholder="请输入密码" class="form-control">
+		</div>
+		<div class="login-info row">
+			<div class="col-xs-6">
+				<a href="{:U('Index/forget')}" class="login-info-link">忘记密码</a>
+			</div>
+			<div class="col-xs-6 text-right">
+				<a href="{:U('Index/register')}" class="login-info-link">立即注册</a>
+			</div>
+		</div>
+		
+		
+		<button class="check-btn form-control" type="button" id="userlogin">登录</button><!--onclick="location='{:U('Index/user')}'"-->
+	</div>
+
+	<footer class="home-footer"></footer>
+</body>
+<script>
+	$('#userlogin').click(function(){
+		var phone = $("input[name='phone']").val();
+		var pwd = $("input[name='password']").val();
+		if(phone && pwd != ""){
+			if((/^1[34578]\d{9}$/.test(phone))){
+				$.ajax({
+					type:"get",
+					url:"/index.php/Mobile/Index/userlogin/phone/"+phone+"/pwd/"+pwd+"",
+					dataType:"json",
+					success:function(data){
+						alert(data.msg);
+						if(data.data == 1){
+							location.href = "{:U('Index/user')}";
+						}
+					}
+				});
+				
+			}else{
+				alert("手机号格式错误！");
+			}
+		}else{
+			alert("手机号与密码不能为空!");
+		}
+	});
+</script>
+</html>

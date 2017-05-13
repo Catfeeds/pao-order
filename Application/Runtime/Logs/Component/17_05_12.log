@@ -1,0 +1,33 @@
+[ 2017-05-12T19:04:12+08:00 ] 127.0.0.1 /index.php/component/test/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-05-12T19:04:23+08:00 ] 127.0.0.1 /index.php/Component/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:3.0189s ]
+SQL: SELECT `code_id`,`device_status` FROM `device` WHERE `device_code` = '666666' LIMIT 1   [ RunTime:0.0498s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.5385s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 260 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 260 ) LIMIT 1   [ RunTime:0.0005s ]
+

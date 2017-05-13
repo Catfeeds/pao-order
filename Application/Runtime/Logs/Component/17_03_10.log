@@ -1,0 +1,164 @@
+[ 2017-03-10T10:41:27+08:00 ] 127.0.0.1 /index.php/component/test/jcm_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-03-10T14:31:04+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0071s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0066s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-03-10T14:31:39+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0059s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0061s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0031s ]
+
+[ 2017-03-10T14:39:51+08:00 ] 127.0.0.1 /index.php/component/test/jcm_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 非法操作:jcm_test
+
+[ 2017-03-10T14:40:23+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0067s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0114s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0031s ]
+
+[ 2017-03-10T14:43:30+08:00 ] 127.0.0.1 /index.php/component/test/jcm_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+ERR: 非法操作:jcm_test
+
+[ 2017-03-10T14:48:38+08:00 ] 127.0.0.1 /index.php/component/test/jcm_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+ERR: 非法操作:jcm_test
+
+[ 2017-03-10T14:49:07+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0068s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0094s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2017-03-10T14:49:09+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0076s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0064s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0032s ]
+
+[ 2017-03-10T14:51:51+08:00 ] 127.0.0.1 /index.php/component/test/jcm_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+ERR: 非法操作:jcm_test
+
+[ 2017-03-10T16:47:15+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0071s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0067s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0032s ]
+
+[ 2017-03-10T16:47:16+08:00 ] 127.0.0.1 /index.php/component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0066s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0065s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0032s ]
+
+[ 2017-03-10T17:50:48+08:00 ] 127.0.0.1 /component/login/vertical_login/device_code/44:04:44:62:9a:b0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `device` [ RunTime:0.0072s ]
+SQL: SELECT `code_id` FROM `device` WHERE `device_code` = '44:04:44:62:9a:b0' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `code` [ RunTime:0.0067s ]
+SQL: SELECT `rest_timestamp` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `restaurant_id` FROM `code` WHERE ( code_id = 235 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `restaurant_page_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `restaurant_page_group` WHERE `restaurant_id` = 100 AND `status` = 1 AND `page_screen` = 2 LIMIT 1   [ RunTime:0.0061s ]
+

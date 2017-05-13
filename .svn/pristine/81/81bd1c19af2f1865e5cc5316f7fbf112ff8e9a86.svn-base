@@ -1,0 +1,113 @@
+<include file="Public/head" />
+<!-- 查询 -->
+<body>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap-datetimepicker-master/bootstrap-datetimepicker.min.css">
+    <div class="container-fluid">
+    	<div class="datetime-search">
+    		<form  method="get" id="myform">
+    	    <span>日期：</span>
+    	    <input type="text" id="startDate" name="startDate" value="{$startDate}">
+    	    <span>-</span>
+    	    <input type="text" id="endtDate" name="endtDate" value="{$endDate}">
+    	    <span class="ml-30">时间：</span>
+    	    <input type="text" id="startTime" name="startTime" value="{$startTime}">
+    	    <span>-</span>
+    	    <input type="text" id="endTime" name="endTime" value="{$endTime}">
+    	    <button class="btn btn-sm btn-primary" type="button" data-commit_type = "0" onclick="search(this)">搜索</button>
+    	    <button class="btn btn-sm btn-primary" type="button" data-commit_type = "1" onclick="search(this)">导出Excel</button>
+    	    </form>
+    	</div>
+    	<div class="dishes-sale" id="ajax_html">
+    		<h4>菜品统计：</h4>
+    		<volist name="all_foodinfo" id="v">
+    		<div class="dishes-sale-item">
+    			<div class="sale-item-head">
+	    			<div class="clearfix">
+					    <div class="pull-left text-right">
+					    	<if condition="($v.Num_sum eq 0) and ($v.Num_sum1 eq 0)">
+					    		<button class="btn">-</button>
+					    	<else/>
+					    	 	<button class="btn" onclick="open-sale-item">+</button>
+					    	</if>
+					    </div>
+					    <div class="pull-left dishes-sale-name">
+					        <span>{$v.food_name}</span>
+					    </div>
+					    <div class="pull-left">
+					        <div class="dishes-sale-progress" style="width:{$v[food_num]*$step_length}px;"></div>
+					        <span class="dishes-sale-num"><span style="color: red;">{$v.food_num}</span>份</span>
+				    	</div>
+					</div>
+    			</div>
+    			<div class="dishes-sale-info">
+					<table class="text-center">
+						<eq name="v.Num_sum" value="0">
+						<else/>
+						<tr>
+							<td>{$v.year}年</td>
+							<volist name = "v['lastyear_allOrderNum']" id="v1">
+								<td><span style="color: red;">{$v1}</span>份</td>
+							</volist>
+						</tr>
+						</eq>
+						<eq name="v.Num_sum1" value="0">
+						<else/>	
+						<tr>
+							<td>{$v.year1}年</td>
+							<volist name = "v['lastyear_allOrderNum1']" id="v2">
+								<td><span style="color: red;">{$v2}</span>份</td>
+							</volist>
+						</tr>
+						</eq>
+						
+						<if condition="($v.Num_sum eq 0) and ($v.Num_sum1 eq 0)">
+						<else/>
+							<tr>
+								<td></td>
+								<td>1月</td>
+								<td>2月</td>
+								<td>3月</td>
+								<td>4月</td>
+								<td>5月</td>
+								<td>6月</td>
+								<td>7月</td>
+								<td>8月</td>
+								<td>9月</td>
+								<td>10月</td>
+								<td>11月</td>
+								<td>12月</td>
+							</tr>
+						</if>
+					</table>
+				</div>
+    		</div>
+    		</volist>
+    		<h4>菜品属性统计：</h4>
+    		<volist name="all_attributeArr" id = 'a_atr'>
+    		<div class="sale-item-head">
+    			<div class="clearfix">
+				    <div class="pull-left text-right">
+				    	<button class="btn">-</button>
+				    </div>
+				    <div class="pull-left dishes-sale-name">
+				        <span>{$Think.lang.$key}</span>
+				    </div>
+				    <div class="pull-left">
+				        <div class="dishes-sale-progress" style="width:{$a_atr*$step_length}px;"></div>
+				        <span class="dishes-sale-num"><span style="color: red;">{$a_atr}</span>份</span>
+			    	</div>
+				</div>
+			</div>
+			</volist>
+    		<div>
+				<ul class="pagination" id="detail-page">
+					{$page}
+				</ul>
+			</div>
+    	</div>
+    </div>
+    <script src="__PUBLIC__/bootstrap-datetimepicker-master/bootstrap-datetimepicker.min.js"></script>
+	<script src="__PUBLIC__/bootstrap-datetimepicker-master/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script src="__PUBLIC__/js/dateSelect.js"></script>
+	<script src="__PUBLIC__/js/Admin-Restaurant/Sale_food_chart.js"></script>
+</body>

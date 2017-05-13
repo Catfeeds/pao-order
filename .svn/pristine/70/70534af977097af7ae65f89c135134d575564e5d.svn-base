@@ -1,0 +1,36 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">
+		<button onclick="javascript:history.back(-1);" class="return-btn">
+			<span class="glyphicon glyphicon-hand-left"></span>
+		</button>
+		<span>个人中心</span>
+	</header>
+	
+	<div class="user">
+		<div class="user-info">
+			<div class=" container-fluid">
+				<div class="row">
+					<div class="col-xs-4">
+						<img src="__PUBLIC__/images/dishes.png" class="img-circle user-info-avatar">
+					</div>
+					<div class="col-xs-8 user-phone">
+						手机号：{$sessionphone}
+					</div>
+				</div>				
+			</div>
+			<p class="user-address">默认地址：{$address}</p>			
+		</div>
+
+		<div class="user-list">
+			<a class="user-list-item" href="{:U('Index/address')}">
+				<span class="glyphicon glyphicon-map-marker"></span>
+				<span>收货地址</span>
+				<span class="glyphicon glyphicon-chevron-right user-list-right"></span>
+			</a>
+		</div>
+	</div>
+
+	<footer class="home-footer"></footer>
+</body>
+</html>

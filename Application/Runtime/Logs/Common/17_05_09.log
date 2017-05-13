@@ -1,0 +1,140 @@
+[ 2017-05-09T20:51:33+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:51:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-05-09T20:51:45+08:00 ] 127.0.0.1 /yunniu/index.php/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+ERR: 无法加载模块:Yunniu
+
+[ 2017-05-09T20:52:55+08:00 ] 127.0.0.1 /Public/images/restaurantLogo/2017-03-07/58be79962126b.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:52:55+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:52:56+08:00 ] 127.0.0.1 /Public/images/restaurantLogo/2017-03-07/58be79962126b.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:52:56+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:52:56+08:00 ] 127.0.0.1 /Public/images/restaurantLogo/2017-03-07/58be79962126b.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:12+08:00 ] 127.0.0.1 /Public/images/restaurantLogo/2017-03-07/58be79962126b.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:12+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:13+08:00 ] 127.0.0.1 /Public/images/restaurantLogo/2017-03-07/58be79962126b.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:13+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Public
+
+��:Public
+
+[ 2017-05-09T20:53:30+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:31+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:39+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:53:47+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:54:10+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:54:16+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:58:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-05-09T20:58:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-05-09T20:59:16+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T20:59:21+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-09T21:06:29+08:00 ] 127.0.0.1 /Public/js/skin/default/layer.css?v=3.0.11110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,64 @@
+<include file="Public/head"/>
+<body>
+	<div class="container-fluid">
+        <form>
+            <div class="radio-form">
+                <input type="radio" name="if_open" id="point-set-on" value="1" onchange="to_db(this.name,this.value,'/index.php/Admin/Member/score_set')">
+                <label for="point-set-on">开启</label>
+                <input type="radio" name="if_open" id="point-set-off" value="0" onchange="to_db(this.name,this.value,'/index.php/Admin/Member/score_set')">
+                <label for="point-set-off">关闭</label>
+                <input type="hidden" id="or_open" value="{$if_open}"/>
+            </div>
+
+            <div id="memberList">
+                <div class="member-tab-item2 form-inline" id="delScore">
+                    消费金额
+                    <input class="form-control" type="text" name="account" value="{$prepaid_rules[account]}" id="man" disabled>元，积分
+                    <input class="form-control" type="text" name="benefit" value="{$score}" id="zhe" disabled>分
+                    <input class="form-control" type="hidden" name="id" value="{$prepaid_rules[id]}"/>
+                </div>
+            </div>
+        </form>
+        <div class="modal fade add-content" id="addModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">新增消费折扣</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            消费金额：
+                            <input type="text" class="form-control">元，积分
+                            <input type="text" class="form-control">元
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+    <script src="__PUBLIC__/js/vip.js"></script>
+
+    <script>
+        // 页面加载完就判断店铺填的公众号支付信息跟代理的是否一致，不一致则让其处于关闭且不可选
+        $(function(){
+            $.post("/index.php/admin/member/if_same","",function(data){
+                if(data == 0){
+                    // 1、让其处于不可选状态
+                    $('[name="if_open"]').val([0]);
+                    $('[name="if_open"]').attr("disabled","disabled");
+                    // 2、关闭数据库中的积分设置开关值(那边返回0的同时直接让它关闭)
+                    // alert("店铺与代理的微信支付对接信息不一致，请统一");
+                }
+            });
+        });
+
+        $('[name="if_open"]').val([$("#or_open").val()]);
+    </script>
+</body>
+</html>

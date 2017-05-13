@@ -1,0 +1,78 @@
+<include file="Public/head"/>
+<!-- 手机端界面 -->
+<body>
+	<div class="container-fluid">
+		<div class="device-vertical" id="row">
+			<div class="device-left">手机端:</div>
+			<div class="clearfix">
+				<volist name = "info" id = 'v' offset = "0" length ='1'>
+					<div class="pull-left device-item">
+						<div class="ad-imgBox">
+							<img src="{$v.group_img_url}">
+						</div>
+						<div class="mt-5 clearfix">
+							<div class="color-select color-red pull-left">
+								<input type="radio" name="color_ph" value="0" class="color3"/>					
+							</div>
+							<div class="color-select color-blue pull-left">
+								<input type="radio" name="color_ph" value="1" class="color3"/>					
+							</div>
+							<div class="color-select color-green pull-left">
+								<input type="radio" name="color_ph" value="2" class="color3"/>					
+							</div>
+							<div class="color-select color-yellow pull-left">
+								<input type="radio" name="color_ph" value="3" class="color3"/>
+							</div>
+							<div class="color-select color-brown pull-left">
+								<input type="radio" name="color_ph" value="4" class="color3"/>
+							</div>
+							<div class="color-select color-orange pull-left">
+								<input type="radio" name="color_ph" value="5" class="color3"/>
+							</div>
+						</div>
+						<div>
+							<eq name = "v['status']" value = "1">
+								<input type="radio" name="phone" class="tplphone" value="{$v.restaurant_page_group_id}" data-tpltype = "3" checked="checked">
+								<else/>
+								<input type="radio" name="phone" class="tplphone" value="{$v.restaurant_page_group_id}" data-tpltype = "3" >
+							</eq>
+							<span class="ml-10">{$v.group_name}</span>
+						</div>
+					</div>
+				</volist>
+				<volist name = "info" id = 'v' offset = "1">
+					<div class="pull-left device-item">
+						<div class="ad-imgBox">
+							<img src="{$v.group_img_url}">
+						</div>
+						<div class="mt-5">
+							<!--<input type="text" placeholder="请输入模板名称">-->
+							<span>模板名：<span style="color: red;">{$v.group_name}</span></span>	
+						</div>
+						<div>
+							<eq name = "v['status']" value = "1">
+								<input type="radio" name="phone" class="tplphone" value="{$v.restaurant_page_group_id}" data-tpltype = "3" checked="checked">订制模板
+								<else/>
+								<input type="radio" name="phone" class="tplphone" value="{$v.restaurant_page_group_id}" data-tpltype = "3" >订制模板
+							</eq>
+						</div>
+					</div>
+				</volist>
+				<div class="pull-left device-item">
+					<div class="ad-imgBox">
+						<img src="">
+					</div>
+					<div class="mt-5">
+						<input type="text" placeholder="请输入模板名称" onchange="findTelp(this)" data-tpltype='3'>
+					</div>
+					<div>
+						<input type="radio" name="phone" class="tplphone">订制模板
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="__PUBLIC__/js/Moudle_device_mobile.js"></script>
+</html>

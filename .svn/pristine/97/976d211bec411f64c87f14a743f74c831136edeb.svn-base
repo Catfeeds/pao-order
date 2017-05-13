@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="modal-head">菜品类别修改</div>
+<form action="javascript:void(0)" id="editDishesType">
+    <input type="hidden" id="attribute_type_id" name="attribute_type_id" value="{$attr_type.attribute_type_id}">
+    <table>
+        <tr>
+            <td>名称：</td>
+            <td>
+                <input type="text" name="type_name" value="{$attr_type.type_name}">
+            </td>
+        </tr>
+        <tr>
+            <td>打印机：</td>
+            <td>
+                <select name="print_id">
+                    <volist name="printerList" id="prt_vo">
+                        <if condition="$prt_vo['printer_id'] eq $attr_type['print_id']">
+                            <option value="{$prt_vo.printer_id}" selected>{$prt_vo.printer_name}</option>
+                            <else/>
+                            <option value="{$prt_vo.printer_id}">{$prt_vo.printer_name}</option>
+                        </if>
+
+                    </volist>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>类型：</td>
+            <td>
+                <if condition="$attr_type['select_type'] eq 0">
+                    <input type="radio" name="select_type" value="0" checked>单选
+                    <input type="radio" name="select_type" value="1">多选
+                    <else/>
+                    <input type="radio" name="select_type" value="0" >单选
+                    <input type="radio" name="select_type" value="1" checked>多选
+                </if>
+
+            </td>
+        </tr>
+         <tr>
+            <td>统计：</td>
+            <td>
+                <if condition="$attr_type['count_type'] eq 0">
+                    <input type="radio" name="count_type" value="0" checked>否
+                    <input type="radio" name="count_type" value="1">是
+                    <else/>
+                    <input type="radio" name="count_type" value="0" >否
+                    <input type="radio" name="count_type" value="1" checked>是
+                </if>
+
+            </td>
+        </tr>
+        <tr>
+            <td>属性：</td>
+            <td>
+                <ul class="attr-list clearfix">
+                    <volist name="attr_type.attrs" id="vo">
+                        <li class="attr-item">
+                            <span>{$vo.attribute_name}</span>
+                            <button class="attr-item-del" data-attr_id="{$vo.food_attribute_id}" onclick="deleteAttr(this)">
+                                <span>&times;</span>
+                            </button>
+                        </li>
+                    </volist>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</form>
+<div class="text-center">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+    <button type="button" class="btn btn-primary" onclick="editDishesType()">修改</button>
+</div>
+</body>
+</html>

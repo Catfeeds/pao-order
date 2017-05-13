@@ -1,0 +1,107 @@
+<include file="Public/head"/>
+<!-- 支付页 -->
+<body>
+	<header class="home-header">
+		<a href="javascript:history.back(-1)">
+			<img src="__PUBLIC__/images/lt.png">
+			<b>重新点餐</b>
+		</a>
+	</header>
+	
+	<div class="pay">
+		<h2 class="text-center">
+			<div class="text-center">餐桌号：{$order.desk_code}</div>
+			<div class="red">
+				&yen;<span class="Total">{$order.total_amount}</span>元
+			</div>
+		</h2>
+		<div class="pay-select">
+			<!--<div class="pay-item" id="alipay">-->
+				<!--<a href="javascript:void(0)">-->
+					<!--<img src="__PUBLIC__/images/alipay.png" class="pay-item-img">-->
+					<!--<span>支付宝支付</span>-->
+				<!--</a>-->
+				<!--<div class="pay-item-right">-->
+					<!--<span class="glyphicon glyphicon-ok-circle" data-paytype="1"></span>-->
+				<!--</div>-->
+			<!--</div>-->
+			<div class="pay-item" id="weixin">
+				<a href="javascript:void(0)">
+					<img src="__PUBLIC__/images/wechat.png" class="pay-item-img">
+					<span>微信支付</span>
+				</a>
+				<div class="pay-item-right">
+					<span class="glyphicon glyphicon-ok-circle red" data-paytype="0"></span>
+				</div>
+			</div>
+		</div>
+		<div class="text-center">
+			<button class="btn-none check-pay" onclick="selectPay()">确认支付<span class="larger ml-10">&yen;<span class="Total">{$order.total_amount}</span>元</span></button>
+		</div>
+	</div>
+	<input type="hidden" value="{$order.order_sn}" name="order_sn" id="order_sn">
+	<footer class="home-footer text-center">
+		本页面在<span class="footer-time" id="pageCloseTime">70秒</span>后自动关闭
+	</footer>
+</body>
+<script>
+	$(function(){
+		IsWeixinOrAlipay();
+		var t = 70;
+		var timeout = setTimeout("autoTimeout("+t+")",1000);
+	});
+
+	function autoTimeout(t){
+		t -= 1;
+		if(t == 0){
+			var restaurant_id = sessionStorage.getItem("restaurant_id");
+			var desk_code = sessionStorage.getItem("desk_code");
+			clearTimeout(timeout);
+			location.href = "/index.php/mobile/index/index/restaurant_id/"+restaurant_id+"/desk_code/"+desk_code;
+			return;
+		}
+		clearTimeout(timeout);
+		var timeout = setTimeout("autoTimeout("+t+")",1000);
+		$("#pageCloseTime").text(t);
+	}
+
+	function selectPay(){
+		var order_sn = $("#order_sn").val();
+		var node = $(".pay-item-right span");
+		$.each(node,function(){
+			console.log($(this));
+			var temp = ($(this).hasClass('red'));
+			if(temp){
+				var payType = $(this).data("paytype");
+				if(payType == 1){
+					self.location.href = "/index.php/mobile/AlipayWapPay/wapPay/order_sn/"+order_sn;
+				}else if(payType == 0){
+					self.location.href = "/index.php/mobile/WxPay/pay/order_sn/"+order_sn;
+				}
+			}
+		});
+	}
+
+	//获取当前客户端是微信还是支付宝
+	function IsWeixinOrAlipay(){
+		$.ajax({
+			url:'/index.php/mobile/index/IsWeixinOrAlipay',
+			type:"post",
+			dataType:"json",
+			success:function(returnMsg){
+				if(returnMsg.returnMsg == "weixin"){
+					$("#alipay").hide();
+					$("#weixin").children().find("span").eq(1).addClass("red");
+				}else if(returnMsg.returnMsg == "ali"){
+					$("#weixin").hide();
+					$("#alipay").hide();
+//					$("#alipay").children().find("span").eq(1).addClass("red");
+				}else{
+					$("#weixin").hide();
+					$("#alipay").hide();
+				}
+			}
+		});
+	}
+</script>
+</html>

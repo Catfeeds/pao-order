@@ -1,0 +1,34 @@
+<div class="dishes-head">
+    		菜品分类设置
+</div>
+<table class="dishes-sort-table">
+    <volist name="data" id="v">
+        <tr>
+            <td class="text-left">{$key+1}</td>
+            <td>
+                <button class="btn-none" data-sort = "{$v.sort}" data-food_category_id = "{$v.food_category_id}" onclick="moveup1(this)">
+                    <img src="__PUBLIC__/images/up.png">
+                </button>
+                <button class="btn-none movedown" data-sort = "{$v.sort}" data-food_category_id = "{$v.food_category_id}" onclick="movedown1(this)">
+                    <img src="__PUBLIC__/images/down.png" >
+                </button>
+            </td>
+            <td class="text-left">
+                <a href="javascirpt:void(0)" data-id="{$v.food_category_id}"
+                   onclick="showinfo(this)" data-toggle="tab">{$v['food_category_name']}</a>
+            </td>
+            <td class="text-right">
+                <button class="btn btn-sm" data-toggle="modal" data-target="#addSort"
+                        onclick="modify1({$v.food_category_id})" id="modify">编辑
+                </button>
+              <button class="btn btn-sm"  onclick="deltype({$v.food_category_id})">删除 </button>
+            </td>
+        </tr>
+    </volist>
+</table>     
+<div class="text-right mt-30">
+    <button class="btn btn-primary" data-toggle="modal" onclick="show_addSort()">增加</button>
+</div>
+        
+<script type="text/javascript" src="__PUBLIC__/js/Dishes_index.js"></script>
+       

@@ -1,0 +1,50 @@
+<div class="ad-left">
+	<p>竖屏广告：</p>
+	<div class="ad-tips">分辨率：<br>1080*1920</div>
+	<div class="ad-tips">大小：<br>1M以下</div>
+</div>
+<div class="clearfix">
+	<volist name = "info1" id = "v1" offset="0" length='1'>
+		<div class="showimg1 pull-left">
+			<div class="ad-imgBox"  id="{$v1.advertisement_id}">
+				<img src="/{$v1.advertisement_image_url}"></div>
+
+			<div class="text-center mt-5">
+				<form name="form1" >
+					<a href="javascript:;" class="a-upload">
+						上传
+						<input type="file" name="default" onchange="preview(this)"></a>
+				</form>
+			</div>
+		</div>
+	</volist>
+	<volist name = "info1" id = "v1" offset="1">
+		<div class="showimg1 pull-left">
+			<div class="ad-imgBox"  id="{$v1.advertisement_id}">
+				<img src="/{$v1.advertisement_image_url}">
+				<button class="delete-btn" onclick="deladver1({$v1.advertisement_id})">
+					<img src="__PUBLIC__/images/delete.png"></button>
+			</div>
+
+			<div class="text-center mt-5">
+				<form name="form1" >
+					<a href="javascript:;" class="a-upload">
+						上传
+						<input type="file" name="change" onchange="preview(this)"></a>
+				</form>
+			</div>
+		</div>
+	</volist>
+	<div class="showimg1 pull-left">
+		<div class="ad-imgBox">
+			<img src=""></div>
+
+		<div class="text-center mt-5">
+			<form name="form1">
+				<a href="javascript:;" class="a-upload">
+					上传
+					<input type="file" name="change" onchange="preview(this)"></a>
+			</form>
+		</div>
+	</div>
+</div>

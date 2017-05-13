@@ -1,0 +1,30 @@
+<include file="Public/head"/>
+<body>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap-datetimepicker-master/bootstrap-datetimepicker.min.css">
+
+	<section class="clearfix">
+		<aside class="set-sidebar">
+			<h3 class="text-center">系统设置</h3>
+			
+			<ul class="sidebar-list">
+				<li class="active">
+					<span>系统设置1</span>
+				</li>
+				<li onclick="show_renew()">
+					<span>设备续费属性修改</span>
+				</li>
+				<li>
+					<span>其它设置</span>
+				</li>
+				<li>
+					<span>系统设置4</span>
+				</li>
+			</ul>
+		</aside>
+		<div class="right-content" id="show_right">
+			
+		</div>
+	</section>
+	<script type="text/javascript" src="__PUBLIC__/js/AllAgent/systemset.js"></script>
+</body>
+</html>

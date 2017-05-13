@@ -1,0 +1,6 @@
+.template-header{
+	background-image:none;
+}
+.select-bd{
+	background-image:url(../images/no_pay_bg.jpg);
+}

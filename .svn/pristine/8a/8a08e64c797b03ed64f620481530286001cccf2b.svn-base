@@ -1,0 +1,85 @@
+<include file="Public/head"/>
+<body>
+	<header class="home-header">
+		<button onclick="javascript:history.back(-1);" class="return-btn">
+			<span class="glyphicon glyphicon-hand-left"></span>
+		</button>
+		<span>用户注册</span>
+	</header>
+	
+	<div class="container-fluid forget">
+		<div class="login-form">
+			<input type="text" name="phone" placeholder="请输入您的手机号" class="form-control">
+			<span class="glyphicon glyphicon-user input-icon"></span>
+		</div>
+		<div class="login-form">
+			<input type="text" name="phone_code" placeholder="请输入您的手机验证码" class="form-control">
+			<span class="glyphicon glyphicon-envelope input-icon"></span>
+			<button class="send-message">获取验证码</button>
+		</div>
+		<div class="login-form">
+			<span class="glyphicon glyphicon-lock input-icon"></span>
+			<input type="password" name="password" placeholder="请输入密码" class="form-control">
+		</div>
+		<div class="login-form">
+			<span class="glyphicon glyphicon-lock input-icon"></span>
+			<input type="password" name="passwords" placeholder="请确认密码" class="form-control">
+		</div>
+		
+		
+		<button class="check-btn form-control" type="button" id="register">立即注册</button>
+	</div>
+
+	<footer class="home-footer"></footer>
+</body>
+<script>
+	$('.send-message').click(function(){
+		var phone = $("input[name='phone']").val();
+		console.log(phone);
+		if(phone != ""){
+			$.ajax({
+			type:"get",
+			url:"/index.php/Mobile/Index/sendsms/phone/"+phone+"",
+			success:function(data){
+				alert("成功");
+				}
+			});
+		}
+		
+	});
+	
+	$('#register').click(function(){
+		var phone = $("input[name='phone']").val();
+		var phone_code = $("input[name='phone_code']").val();
+		var password = $("input[name='password']").val();
+		var passwords = $("input[name='passwords']").val();
+		console.log(phone+"|"+phone_code+"|"+password+"|"+passwords);
+		if(phone && phone_code && password && passwords != ""){
+			 if((/^1[34578]\d{9}$/.test(phone)) && (/^\d{4}$/.test(phone_code))){
+			 	if(password === passwords){
+			 		$.ajax({
+			 			type:"post",
+			 			url:"/index.php/Mobile/Index/userRegister",
+			 			data:{"phone":phone,"phone_code":phone_code,"password":password},
+			 			dataType:"json",
+			 			success:function(data){
+			 				//console.log(data.msg);
+			 				alert(data.msg);
+			 				if(data.data == 1){
+			 					location.href = "/index.php/Mobile/Index/login";
+			 				}
+			 			}
+			 		});
+			 	}else{
+			 		alert("两次密码不一致!");
+			 	}
+			 }else{
+			 	alert("手机号或验证码格式不正确！");
+			 }
+		}else{
+			alert("手机号，验证码，或密码不能为空!");
+		}
+	});
+	
+</script>
+</html>
